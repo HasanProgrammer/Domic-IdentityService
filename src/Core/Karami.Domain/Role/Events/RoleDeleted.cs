@@ -5,7 +5,7 @@ using Karami.Core.Domain.Contracts.Abstracts;
 namespace Karami.Domain.Role.Events;
 
 [MessageBroker(Queue = Broker.Auth_Role_Queue)]
-public class RoleDeleted : DeleteDomainEvent
+public class RoleDeleted : UpdateDomainEvent<string>
 {
-    public string Id { get; set; }
+    
 }

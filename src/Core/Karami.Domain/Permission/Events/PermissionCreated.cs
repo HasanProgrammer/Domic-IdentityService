@@ -5,9 +5,8 @@ using Karami.Core.Domain.Contracts.Abstracts;
 namespace Karami.Domain.Permission.Events;
 
 [MessageBroker(Queue = Broker.Auth_Permission_Queue)]
-public class PermissionCreated : CreateDomainEvent
+public class PermissionCreated : CreateDomainEvent<string>
 {
-    public string Id     { get; init; }
     public string RoleId { get; init; }
     public string Name   { get; init; }
 }

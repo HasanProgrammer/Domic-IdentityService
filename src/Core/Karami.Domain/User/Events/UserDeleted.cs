@@ -5,7 +5,7 @@ using Karami.Core.Domain.Contracts.Abstracts;
 namespace Karami.Domain.User.Events;
 
 [MessageBroker(Queue = Broker.Auth_User_Queue)]
-public class UserDeleted : DeleteDomainEvent
+public class UserDeleted : UpdateDomainEvent<string>
 {
     
 }

@@ -5,7 +5,6 @@ using Karami.Core.Domain.Contracts.Abstracts;
 namespace Karami.Domain.Permission.Events;
 
 [MessageBroker(Queue = Broker.Auth_Permission_Queue)]
-public class PermissionDeleted : DeleteDomainEvent
+public class PermissionDeleted : UpdateDomainEvent<string>
 {
-    public string Id { get; set; }
 }
