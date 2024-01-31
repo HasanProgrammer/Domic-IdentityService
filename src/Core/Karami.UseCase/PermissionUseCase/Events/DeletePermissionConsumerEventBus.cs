@@ -19,8 +19,7 @@ public class DeletePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
         _permissionQueryRepository     = permissionQueryRepository;
         _permissionUserQueryRepository = permissionUserQueryRepository;
     }
-
-    [WithMaxRetry(Count = 5)]
+    
     [WithTransaction]
     public void Handle(PermissionDeleted @event)
     {
@@ -28,9 +27,13 @@ public class DeletePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
             
         if (targetPermission is not null) //Replication management
         {
-            #region SoftDelete Permission
+            #region SoftDeletePermission
 
-            targetPermission.IsDeleted = IsDeleted.Delete;
+            targetPermission.UpdatedBy   = @event.UpdatedBy;
+            targetPermission.UpdatedRole = @event.UpdatedRole;
+            targetPermission.IsDeleted   = IsDeleted.Delete;
+            targetPermission.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;
+            targetPermission.UpdatedAt_PersianDate = @event.UpdatedAt_PersianDate;
         
             _permissionQueryRepository.Change(targetPermission);
 

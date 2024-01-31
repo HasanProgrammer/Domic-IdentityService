@@ -10,8 +10,7 @@ public class DeleteUserConsumerEventBusHandler : IConsumerEventBusHandler<UserDe
     private readonly IQueryUnitOfWork _queryUnitOfWork;
 
     public DeleteUserConsumerEventBusHandler(IQueryUnitOfWork queryUnitOfWork) => _queryUnitOfWork = queryUnitOfWork;
-
-    [WithMaxRetry(Count = 5)]
+    
     [WithTransaction]
     public void Handle(UserDeleted @event)
     {

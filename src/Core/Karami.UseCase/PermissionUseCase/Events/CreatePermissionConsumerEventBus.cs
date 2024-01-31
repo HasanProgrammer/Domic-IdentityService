@@ -12,8 +12,7 @@ public class CreatePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
 
     public CreatePermissionConsumerEventBus(IPermissionQueryRepository permissionQueryRepository)
         => _permissionQueryRepository = permissionQueryRepository;
-
-    [WithMaxRetry(Count = 5)]
+    
     [WithTransaction]
     public void Handle(PermissionCreated @event)
     {
@@ -22,9 +21,13 @@ public class CreatePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
         if (targetPermission is null) //Replication management
         {
             var newPermission = new PermissionQuery {
-                Id     = @event.Id     ,
-                RoleId = @event.RoleId ,
-                Name   = @event.Name
+                Id          = @event.Id          ,
+                CreatedBy   = @event.CreatedBy   ,
+                CreatedRole = @event.CreatedRole ,
+                RoleId      = @event.RoleId      ,
+                Name        = @event.Name        ,
+                CreatedAt_EnglishDate = @event.CreatedAt_EnglishDate,
+                CreatedAt_PersianDate = @event.CreatedAt_PersianDate
             };
         
             _permissionQueryRepository.Add(newPermission);

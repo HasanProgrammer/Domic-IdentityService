@@ -11,14 +11,17 @@ public class UpdateRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleUp
 
     public UpdateRoleConsumerEventBusHandler(IRoleQueryRepository roleQueryRepository) 
         => _roleQueryRepository = roleQueryRepository;
-
-    [WithMaxRetry(Count = 5)]
+    
     [WithTransaction]
     public void Handle(RoleUpdated @event)
     {
         var targetRole = _roleQueryRepository.FindByIdAsync(@event.Id, default).Result;
-
-        targetRole.Name = @event.Name;
+        
+        targetRole.UpdatedBy   = @event.UpdatedBy;
+        targetRole.UpdatedRole = @event.UpdatedRole;
+        targetRole.Name        = @event.Name;
+        targetRole.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;
+        targetRole.UpdatedAt_PersianDate = @event.UpdatedAt_PersianDate;
 
         _roleQueryRepository.Change(targetRole);
     }

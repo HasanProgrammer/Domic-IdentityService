@@ -1,48 +1,32 @@
-﻿using Karami.Core.Domain.Enumerations;
-using Karami.Core.UseCase.Attributes;
+﻿using Karami.Core.UseCase.Attributes;
 using Karami.Core.UseCase.Contracts.Interfaces;
 using Karami.Domain.Permission.Contracts.Interfaces;
 using Karami.Domain.Permission.Events;
-using Karami.Domain.PermissionUser.Contracts.Interfaces;
 
 namespace Karami.UseCase.PermissionUseCase.Events;
 
-public class UpdatePermissionConsumerEventBus : IConsumerEventBusHandler<PermissionDeleted>
+public class UpdatePermissionConsumerEventBus : IConsumerEventBusHandler<PermissionUpdated>
 {
-    private readonly IPermissionQueryRepository     _permissionQueryRepository;
-    private readonly IPermissionUserQueryRepository _permissionUserQueryRepository;
+    private readonly IPermissionQueryRepository _permissionQueryRepository;
 
-    public UpdatePermissionConsumerEventBus(IPermissionQueryRepository permissionQueryRepository, 
-        IPermissionUserQueryRepository permissionUserQueryRepository
-    )
-    {
-        _permissionQueryRepository     = permissionQueryRepository;
-        _permissionUserQueryRepository = permissionUserQueryRepository;
-    }
-
-    [WithMaxRetry(Count = 5)]
+    public UpdatePermissionConsumerEventBus(IPermissionQueryRepository permissionQueryRepository)
+        => _permissionQueryRepository = permissionQueryRepository;
+    
     [WithTransaction]
-    public void Handle(PermissionDeleted @event)
+    public void Handle(PermissionUpdated @event)
     {
-        var targetPermission = _permissionQueryRepository.FindByIdAsync(@event.Id, default).Result;
+        var targetPermission = _permissionQueryRepository.FindByIdAsync(@event.Id, default).GetAwaiter().GetResult();
             
         if (targetPermission is not null) //Replication management
         {
-            #region SoftDelete Permission
-
-            targetPermission.IsDeleted = IsDeleted.Delete;
+            targetPermission.RoleId      = @event.RoleId;
+            targetPermission.UpdatedBy   = @event.UpdatedBy;
+            targetPermission.UpdatedRole = @event.UpdatedRole;
+            targetPermission.Name        = @event.Name;
+            targetPermission.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;
+            targetPermission.UpdatedAt_PersianDate = @event.UpdatedAt_PersianDate;
         
             _permissionQueryRepository.Change(targetPermission);
-
-            #endregion
-
-            #region HardDelete PermissionUser
-
-            var permissionUsers = _permissionUserQueryRepository.FindAllByPermissionIdAsync(@event.Id, default).Result;
-
-            _permissionUserQueryRepository.RemoveRange(permissionUsers);
-
-            #endregion
         }
     }
 }

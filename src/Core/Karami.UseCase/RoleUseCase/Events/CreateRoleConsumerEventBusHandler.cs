@@ -12,8 +12,7 @@ public class CreateRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleCr
 
     public CreateRoleConsumerEventBusHandler(IRoleQueryRepository roleQueryRepository) 
         => _roleQueryRepository = roleQueryRepository;
-
-    [WithMaxRetry(Count = 5)]
+    
     [WithTransaction]
     public void Handle(RoleCreated @event)
     {
@@ -22,8 +21,12 @@ public class CreateRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleCr
         if (targetRole is null) //Replication management
         {
             var newRole = new RoleQuery {
-                Id   = @event.Id,
-                Name = @event.Name
+                Id          = @event.Id,
+                CreatedBy   = @event.CreatedBy,
+                CreatedRole = @event.CreatedRole,
+                Name        = @event.Name,
+                CreatedAt_EnglishDate = @event.CreatedAt_EnglishDate,
+                CreatedAt_PersianDate = @event.CreatedAt_PersianDate
             };
 
             _roleQueryRepository.Add(newRole);

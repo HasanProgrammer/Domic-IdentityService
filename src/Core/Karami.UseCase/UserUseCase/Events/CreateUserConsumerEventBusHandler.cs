@@ -1,4 +1,5 @@
-﻿using Karami.Core.Domain.Enumerations;
+﻿using Karami.Core.Domain.Contracts.Interfaces;
+using Karami.Core.Domain.Enumerations;
 using Karami.Core.Domain.Extensions;
 using Karami.Core.UseCase.Attributes;
 using Karami.Core.UseCase.Contracts.Interfaces;
@@ -17,17 +18,19 @@ public class CreateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserCr
     private readonly IUserQueryRepository           _userQueryRepository;
     private readonly IRoleUserQueryRepository       _roleUserQueryRepository;
     private readonly IPermissionUserQueryRepository _permissionUserQueryRepository;
+    private readonly IGlobalUniqueIdGenerator       _globalUniqueIdGenerator;
 
     public CreateUserConsumerEventBusHandler(IUserQueryRepository userQueryRepository, 
-        IRoleUserQueryRepository roleUserQueryRepository, IPermissionUserQueryRepository permissionUserQueryRepository
+        IRoleUserQueryRepository roleUserQueryRepository, IPermissionUserQueryRepository permissionUserQueryRepository,
+        IGlobalUniqueIdGenerator globalUniqueIdGenerator
     )
     {
         _userQueryRepository           = userQueryRepository;
         _roleUserQueryRepository       = roleUserQueryRepository;
         _permissionUserQueryRepository = permissionUserQueryRepository;
+        _globalUniqueIdGenerator       = globalUniqueIdGenerator;
     }
-
-    [WithMaxRetry(Count = 5)]
+    
     [WithTransaction]
     public void Handle(UserCreated @event)
     {
@@ -36,24 +39,35 @@ public class CreateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserCr
         if (targetUser is null) //Replication management
         {
             var newUser = new UserQuery {
-                Id        = @event.Id                                 , 
-                FirstName = @event.FirstName                          ,
-                LastName  = @event.LastName                           ,
-                Username  = @event.Username                           ,
-                Password  = @event.Password.HashAsync(default).Result ,
-                IsActive  = @event.IsActive ? IsActive.Active : IsActive.InActive
+                Id          = @event.Id                                 ,
+                CreatedBy   = @event.CreatedBy                          ,
+                CreatedRole = @event.CreatedRole                        , 
+                FirstName   = @event.FirstName                          ,
+                LastName    = @event.LastName                           ,
+                Username    = @event.Username                           ,
+                Password    = @event.Password.HashAsync(default).Result ,
+                IsActive    = @event.IsActive ? IsActive.Active : IsActive.InActive ,
+                CreatedAt_EnglishDate = @event.CreatedAt_EnglishDate,
+                CreatedAt_PersianDate = @event.CreatedAt_PersianDate
             };
 
             _userQueryRepository.Add(newUser);
         
-            _roleUserBuilder(@event.Id, @event.Roles);
-            _permissionUserBuilder(@event.Id, @event.Permissions);
+            _roleUserBuilder(@event.Id, @event.Roles, @event.CreatedBy, @event.CreatedRole, 
+                @event.CreatedAt_EnglishDate, @event.CreatedAt_PersianDate
+            );
+            
+            _permissionUserBuilder(@event.Id, @event.Permissions, @event.CreatedBy, @event.CreatedRole, 
+                @event.CreatedAt_EnglishDate, @event.CreatedAt_PersianDate
+            );
         }
     }
     
     /*---------------------------------------------------------------*/
     
-    private void _roleUserBuilder(string userId, IEnumerable<string> roleIds)
+    private void _roleUserBuilder(string userId, IEnumerable<string> roleIds, string createdBy, string createdRole,
+        DateTime englishCreatedAt, string persianCreatedAt
+    )
     {
         var roleUsers = _roleUserQueryRepository.FindAllByUserIdAsync(userId, default).Result;
         
@@ -64,16 +78,22 @@ public class CreateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserCr
         foreach (var roleId in roleIds)
         {
             var newRoleUser = new RoleUserQuery {
-                Id     = Guid.NewGuid().ToString(), 
-                UserId = userId, 
-                RoleId = roleId
+                Id          =_globalUniqueIdGenerator.GetRandom(),
+                CreatedBy   = createdBy,
+                CreatedRole = createdRole,
+                UserId      = userId,
+                RoleId      = roleId,
+                CreatedAt_EnglishDate = englishCreatedAt,
+                CreatedAt_PersianDate = persianCreatedAt
             };
 
             _roleUserQueryRepository.Add(newRoleUser);
         }
     }
     
-    private void _permissionUserBuilder(string userId, IEnumerable<string> permissionIds)
+    private void _permissionUserBuilder(string userId, IEnumerable<string> permissionIds, string createdBy, 
+        string createdRole, DateTime englishCreatedAt, string persianCreatedAt
+    )
     {
         var permissionUsers = _permissionUserQueryRepository.FindAllByUserIdAsync(userId, default).Result;
         
@@ -84,9 +104,13 @@ public class CreateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserCr
         foreach (var permissionId in permissionIds)
         {
             var newPermissionUser = new PermissionUserQuery {
-                Id           = Guid.NewGuid().ToString(),
+                Id           = _globalUniqueIdGenerator.GetRandom(),
+                CreatedBy    = createdBy,
+                CreatedRole  = createdRole,
                 UserId       = userId,
-                PermissionId = permissionId
+                PermissionId = permissionId,
+                CreatedAt_EnglishDate = englishCreatedAt,
+                CreatedAt_PersianDate = persianCreatedAt
             };
 
             _permissionUserQueryRepository.Add(newPermissionUser);

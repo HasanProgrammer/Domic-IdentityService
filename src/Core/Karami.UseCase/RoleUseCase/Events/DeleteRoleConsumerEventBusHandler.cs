@@ -26,8 +26,7 @@ public class DeleteRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleDe
         _permissionUserQueryRepository = permissionUserQueryRepository;
         _roleUserQueryRepository       = roleUserQueryRepository;
     }
-
-    [WithMaxRetry(Count = 5)]
+    
     [WithTransaction]
     public void Handle(RoleDeleted @event)
     {
@@ -35,26 +34,34 @@ public class DeleteRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleDe
             
         if (targetRole is not null) //Replication management
         {
-            #region SoftDelete Role
+            #region SoftDeleteRole
 
-            targetRole.IsDeleted = IsDeleted.Delete;
+            targetRole.UpdatedBy   = @event.UpdatedBy;
+            targetRole.UpdatedRole = @event.UpdatedRole;
+            targetRole.IsDeleted   = IsDeleted.Delete;
+            targetRole.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;
+            targetRole.UpdatedAt_PersianDate = @event.UpdatedAt_PersianDate;
         
             _roleQueryRepository.Change(targetRole);
 
             #endregion
         
-            #region SoftDelete Permission
+            #region SoftDeletePermission
 
             foreach (var permission in targetRole.Permissions)
             {
-                permission.IsDeleted = IsDeleted.Delete;
+                permission.UpdatedBy   = @event.UpdatedBy;
+                permission.UpdatedRole = @event.UpdatedRole;
+                permission.IsDeleted   = IsDeleted.Delete;
+                permission.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;
+                permission.UpdatedAt_PersianDate = @event.UpdatedAt_PersianDate;
             
                 _permissionQueryRepository.Change(permission);
             }
 
             #endregion
         
-            #region HardDelete RoleUser
+            #region HardDeleteRoleUser
 
             var roleUsers = _roleUserQueryRepository.FindAllByRoleIdAsync(@event.Id, default).Result;
         
@@ -62,11 +69,11 @@ public class DeleteRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleDe
 
             #endregion
         
-            #region HardDelete PermissionUser
+            #region HardDeletePermissionUser
 
             foreach (var permission in targetRole.Permissions)
             {
-                var permissionUsers = 
+                var permissionUsers =
                     _permissionUserQueryRepository.FindAllByPermissionIdAsync(permission.Id, default).Result;
         
                 _permissionUserQueryRepository.RemoveRange(permissionUsers);
