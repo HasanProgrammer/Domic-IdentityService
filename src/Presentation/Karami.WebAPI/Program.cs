@@ -1,4 +1,3 @@
-using Karami.Core.Common.ClassConsts;
 using Karami.Core.Infrastructure.Extensions;
 using Karami.Core.WebAPI.Extensions;
 using Karami.Infrastructure.Extensions.Q;
@@ -21,7 +20,8 @@ builder.WebHost.ConfigureAppConfiguration((context, builder) => builder.AddJsonF
 #region Service Container
 
 builder.RegisterHelpers();
-builder.RegisterQuerySqlServer<SQLContext>();
+builder.RegisterELK();
+builder.RegisterEntityFrameworkCoreQuery<SQLContext>();
 builder.RegisterQueryRepositories();
 builder.RegisterCommandQueryUseCases();
 builder.RegisterMessageBroker();

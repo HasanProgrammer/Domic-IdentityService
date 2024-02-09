@@ -1,270 +1,6 @@
 
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/01 | Message: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0 | Source: RabbitMQ.Client.Exceptions.AlreadyClosedException: Already closed: The AMQP operation was interrupted: AMQP close-reason, initiated by Application, code=200, text='Goodbye', classId=0, methodId=0
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Framing.Impl.Model.BasicReject(UInt64 deliveryTag, Boolean requeue)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus._requeueMessage(BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 127 
-
-
- Date: 1402/01/02 | Message: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=404, text='NOT_FOUND - no queue 'Auth_User_Queue' in vhost '/'', classId=60, methodId=20 | Source: RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=404, text='NOT_FOUND - no queue 'Auth_User_Queue' in vhost '/'', classId=60, methodId=20
-   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
-   at RabbitMQ.Client.Impl.ModelBase.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.Impl.AutorecoveringModel.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.IModelExensions.BasicConsume(IModel model, IBasicConsumer consumer, String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitUserConsumerEventBus.SubscribeAsync(CancellationToken cancellationToken) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitUserConsumerEventBus.cs:line 68 
-
-
- Date: 1402/01/02 | Message: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=404, text='NOT_FOUND - no queue 'Auth_Role_Queue' in vhost '/'', classId=60, methodId=20 | Source: RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=404, text='NOT_FOUND - no queue 'Auth_Role_Queue' in vhost '/'', classId=60, methodId=20
-   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
-   at RabbitMQ.Client.Impl.ModelBase.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.Impl.AutorecoveringModel.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.IModelExensions.BasicConsume(IModel model, IBasicConsumer consumer, String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitRoleConsumerEventBus.SubscribeAsync(CancellationToken cancellationToken) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitRoleConsumerEventBus.cs:line 66 
-
-
- Date: 1402/01/02 | Message: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=404, text='NOT_FOUND - no queue 'Auth_Permission_Queue' in vhost '/'', classId=60, methodId=20 | Source: RabbitMQ.Client.Exceptions.OperationInterruptedException: The AMQP operation was interrupted: AMQP close-reason, initiated by Peer, code=404, text='NOT_FOUND - no queue 'Auth_Permission_Queue' in vhost '/'', classId=60, methodId=20
-   at RabbitMQ.Client.Impl.SimpleBlockingRpcContinuation.GetReply(TimeSpan timeout)
-   at RabbitMQ.Client.Impl.ModelBase.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.Impl.AutorecoveringModel.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.IModelExensions.BasicConsume(IModel model, IBasicConsumer consumer, String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments)
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitPermissionConsumerEventBus.SubscribeAsync(CancellationToken cancellationToken) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitPermissionConsumerEventBus.cs:line 70 
-
-
- Date: 1402/01/02 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
- ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Permissions_Roles_RoleId". The conflict occurred in database "AuthService", table "dbo.Roles", column 'Id'.
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Permissions_Roles_RoleId". The conflict occurred in database "Q-AuthService", table "dbo.Roles", column 'Id'.
 The statement has been terminated.
    at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
@@ -280,7 +16,7 @@ The statement has been terminated.
    at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
    at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-ClientConnectionId:6c6acf8c-4fcc-43d7-b309-5119cb74587d
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
 Error Number:547,State:0,Class:16
    --- End of inner exception stack trace ---
    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
@@ -293,49 +29,824 @@ Error Number:547,State:0,Class:16
    at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
    at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 31
-   at Karami.Infrastructure.Implementations.UseCase.Services.RabbitPermissionConsumerEventBus._eventSubscriber(Object sender, BasicDeliverEventArgs args) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.UseCase\Services\RabbitPermissionConsumerEventBus.cs:line 106 
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
 
 
- Date: 1402/04/21 | Message: Value cannot be null. (Parameter 'chars') | Source: System.ArgumentNullException: Value cannot be null. (Parameter 'chars')
-   at System.Text.UTF8Encoding.GetByteCount(String chars)
-   at RabbitMQ.Client.Framing.Impl.BasicConsume.GetRequiredBufferSize()
-   at RabbitMQ.Client.Impl.OutgoingCommand.GetMaxSize(Int32 maxPayloadBytes)
-   at RabbitMQ.Client.Impl.OutgoingCommand.Transmit(UInt16 channelNumber, Connection connection)
-   at RabbitMQ.Client.Impl.SessionBase.Transmit(OutgoingCommand& cmd)
-   at RabbitMQ.Client.Impl.ModelBase.ModelSend(MethodBase method, ContentHeaderBase header, ReadOnlyMemory`1 body)
-   at RabbitMQ.Client.Framing.Impl.Model._Private_BasicConsume(String queue, String consumerTag, Boolean noLocal, Boolean autoAck, Boolean exclusive, Boolean nowait, IDictionary`2 arguments)
-   at RabbitMQ.Client.Impl.ModelBase.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.Impl.AutorecoveringModel.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.IModelExensions.BasicConsume(IModel model, IBasicConsumer consumer, String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments)
-   at Karami.Core.Domain.Implementations.MessageBroker.Subscribe(String queue) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\CoreService\Concretes\Karami.Core.Infrastructure\Implementations\MessageBroker.cs:line 171 
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedBy', table 'Q-AuthService.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:a3ae74a8-2850-4661-93bd-d1df3559ddee
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
 
 
- Date: 1402/04/21 | Message: Pipelining of requests forbidden | Source: System.NotSupportedException: Pipelining of requests forbidden
-   at RabbitMQ.Client.Impl.RpcContinuationQueue.Enqueue(IRpcContinuation k)
-   at RabbitMQ.Client.Impl.ModelBase.Enqueue(IRpcContinuation k)
-   at RabbitMQ.Client.Impl.ModelBase.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.Impl.AutorecoveringModel.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.IModelExensions.BasicConsume(IModel model, IBasicConsumer consumer, String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments)
-   at Karami.Core.Domain.Implementations.MessageBroker.Subscribe(String queue) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\CoreService\Concretes\Karami.Core.Infrastructure\Implementations\MessageBroker.cs:line 171 
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Permissions_Roles_RoleId". The conflict occurred in database "Q-AuthService", table "dbo.Roles", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
 
 
- Date: 1402/04/21 | Message: Pipelining of requests forbidden | Source: System.NotSupportedException: Pipelining of requests forbidden
-   at RabbitMQ.Client.Impl.RpcContinuationQueue.Enqueue(IRpcContinuation k)
-   at RabbitMQ.Client.Impl.ModelBase.Enqueue(IRpcContinuation k)
-   at RabbitMQ.Client.Impl.ModelBase.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.Impl.AutorecoveringModel.BasicConsume(String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments, IBasicConsumer consumer)
-   at RabbitMQ.Client.IModelExensions.BasicConsume(IModel model, IBasicConsumer consumer, String queue, Boolean autoAck, String consumerTag, Boolean noLocal, Boolean exclusive, IDictionary`2 arguments)
-   at Karami.Core.Domain.Implementations.MessageBroker.Subscribe(String queue) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\CoreService\Concretes\Karami.Core.Infrastructure\Implementations\MessageBroker.cs:line 171 
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedBy', table 'Q-AuthService.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:a3ae74a8-2850-4661-93bd-d1df3559ddee
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
 
 
- Date: 1402/06/23 | Message: An item with the same key has already been added. Key: Permission | Source: System.ArgumentException: An item with the same key has already been added. Key: Permission
-   at System.Collections.Generic.Dictionary`2.TryInsert(TKey key, TValue value, InsertionBehavior behavior)
-   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
-   at Karami.UseCase.UserUseCase.Commands.SignIn.SignInCommandHandler.HandleAsync(SignInCommand command, CancellationToken cancellationToken) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Core\Karami.UseCase\UserUseCase\Commands\SignIn\SignInCommandHandler.cs:line 49
-   at Karami.Core.Domain.Implementations.Mediator.DispatchAsync[TResult](ICommand`1 command, CancellationToken cancellationToken) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\CoreService\Architecture\Infrastructure\Karami.Core.Infrastructure\Implementations\Mediator.cs:line 121
-   at Karami.WebAPI.EntryPoints.GRPCs.AuthRPC.SignIn(SignInRequest request, ServerCallContext context) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\AuthService\src\Presentation\Karami.WebAPI\EntryPoints\GRPCs\AuthRPC.cs:line 35
-   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
-   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
-   at Karami.Core.WebAPI.Middlewares.ExceptionHandlerInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) in C:\Users\Hasan Karami\Desktop\Hasan Company\Programming ASP\ASP_Micro_Clean_Dotris_Final\src\Services\CoreService\Architecture\Presentation\Karami.Core.WebAPI\Middlewares\ExceptionHandlerInterceptor.cs:line 67 
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:a3ae74a8-2850-4661-93bd-d1df3559ddee
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedBy', table 'Q-AuthService.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:a3ae74a8-2850-4661-93bd-d1df3559ddee
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedBy', table 'Q-AuthService.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedBy', table 'Q-AuthService.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedBy', table 'Q-AuthService.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedBy', table 'Q-AuthService.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedBy', table 'Q-AuthService.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedBy', table 'Q-AuthService.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedBy', table 'Q-AuthService.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
+
+
+ Date: 1402/11/20 | Message: An error occurred while saving the entity changes. See the inner exception for details. | Source: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_PermissionUsers_Permissions_PermissionId". The conflict occurred in database "Q-AuthService", table "dbo.Permissions", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:f266401c-2218-449a-b0be-e687ee838f40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Karami.Infrastructure.Implementations.Domain.Repositories.Q.QueryUnitOfWork.Commit() in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\AuthService\src\Infrastructure\Karami.Infrastructure\Implementations.Domain\Repositories\Q\QueryUnitOfWork.cs:line 22
+   at Karami.Core.Infrastructure.Implementations.MessageBroker._EventOfQueueHandle(IModel channel, BasicDeliverEventArgs args, Event event, String service, IServiceProvider serviceProvider) 
 
