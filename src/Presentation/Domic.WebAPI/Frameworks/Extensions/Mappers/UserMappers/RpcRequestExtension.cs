@@ -1,5 +1,5 @@
-using Karami.Core.Grpc.Auth;
-using Karami.UseCase.UserUseCase.Commands.SignIn;
+using Domic.Core.Auth.Grpc;
+using Domic.UseCase.UserUseCase.Commands.SignIn;
 
 namespace Domic.WebAPI.Frameworks.Extensions.Mappers.UserMappers;
 

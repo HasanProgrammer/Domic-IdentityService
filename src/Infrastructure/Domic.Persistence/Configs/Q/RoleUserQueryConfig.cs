@@ -1,5 +1,5 @@
-using Karami.Core.Persistence.Configs;
-using Karami.Domain.RoleUser.Entities;
+using Domic.Core.Persistence.Configs;
+using Domic.Domain.RoleUser.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

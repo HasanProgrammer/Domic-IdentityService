@@ -1,5 +1,5 @@
 using System.Data;
-using Karami.Domain.Commons.Contracts.Interfaces;
+using Domic.Domain.Commons.Contracts.Interfaces;
 using Domic.Persistence.Contexts.Q;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;

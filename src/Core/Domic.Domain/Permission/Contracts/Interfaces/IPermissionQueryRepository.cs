@@ -1,5 +1,5 @@
 using Domic.Domain.Permission.Entities;
-using Karami.Core.Domain.Contracts.Interfaces;
+using Domic.Core.Domain.Contracts.Interfaces;
 
 namespace Domic.Domain.Permission.Contracts.Interfaces;
 

@@ -1,6 +1,6 @@
-﻿using Karami.Core.Domain.Attributes;
-using Karami.Core.Domain.Constants;
-using Karami.Core.Domain.Contracts.Abstracts;
+﻿using Domic.Core.Domain.Attributes;
+using Domic.Core.Domain.Constants;
+using Domic.Core.Domain.Contracts.Abstracts;
 
 namespace Domic.Domain.User.Events;
 

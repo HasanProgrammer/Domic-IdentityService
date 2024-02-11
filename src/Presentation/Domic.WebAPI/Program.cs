@@ -1,5 +1,5 @@
-using Karami.Core.Infrastructure.Extensions;
-using Karami.Core.WebAPI.Extensions;
+using Domic.Core.Infrastructure.Extensions;
+using Domic.Core.WebAPI.Extensions;
 using Domic.Infrastructure.Extensions.Q;
 using Domic.Persistence.Contexts.Q;
 using Domic.WebAPI.EntryPoints.GRPCs;

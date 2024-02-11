@@ -1,5 +1,5 @@
-﻿using Karami.Core.UseCase.Attributes;
-using Karami.Core.UseCase.Contracts.Interfaces;
+﻿using Domic.Core.UseCase.Attributes;
+using Domic.Core.UseCase.Contracts.Interfaces;
 using Domic.Domain.Permission.Contracts.Interfaces;
 using Domic.Domain.Permission.Entities;
 using Domic.Domain.Permission.Events;

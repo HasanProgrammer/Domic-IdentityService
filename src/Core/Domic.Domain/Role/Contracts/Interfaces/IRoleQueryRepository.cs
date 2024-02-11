@@ -1,5 +1,5 @@
 ﻿using Domic.Domain.Role.Entities;
-using Karami.Core.Domain.Contracts.Interfaces;
+using Domic.Core.Domain.Contracts.Interfaces;
 
 namespace Domic.Domain.Role.Contracts.Interfaces;
 

@@ -1,6 +1,6 @@
 using Domic.Domain.Permission.Entities;
 using Domic.Domain.RoleUser.Entities;
-using Karami.Core.Domain.Contracts.Abstracts;
+using Domic.Core.Domain.Contracts.Abstracts;
 
 #pragma warning disable CS0649
 

@@ -1,5 +1,5 @@
-﻿using Karami.Domain.Role.Contracts.Interfaces;
-using Karami.Domain.Role.Entities;
+﻿using Domic.Domain.Role.Contracts.Interfaces;
+using Domic.Domain.Role.Entities;
 using Domic.Persistence.Contexts.Q;
 using Microsoft.EntityFrameworkCore;
 

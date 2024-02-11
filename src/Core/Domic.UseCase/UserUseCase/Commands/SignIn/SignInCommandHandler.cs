@@ -1,9 +1,9 @@
 ﻿using System.Security.Claims;
-using Karami.Core.Domain.Contracts.Interfaces;
-using Karami.Core.Domain.Extensions;
-using Karami.Core.UseCase.Contracts.Interfaces;
-using Karami.Core.UseCase.DTOs;
-using Karami.Core.UseCase.Exceptions;
+using Domic.Core.Domain.Contracts.Interfaces;
+using Domic.Core.Domain.Extensions;
+using Domic.Core.UseCase.Contracts.Interfaces;
+using Domic.Core.UseCase.DTOs;
+using Domic.Core.UseCase.Exceptions;
 using Domic.Domain.User.Contracts.Interfaces;
 using Microsoft.Extensions.Configuration;
 

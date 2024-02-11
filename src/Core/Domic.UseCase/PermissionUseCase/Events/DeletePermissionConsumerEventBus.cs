@@ -1,6 +1,6 @@
-﻿using Karami.Core.Domain.Enumerations;
-using Karami.Core.UseCase.Attributes;
-using Karami.Core.UseCase.Contracts.Interfaces;
+﻿using Domic.Core.Domain.Enumerations;
+using Domic.Core.UseCase.Attributes;
+using Domic.Core.UseCase.Contracts.Interfaces;
 using Domic.Domain.Permission.Contracts.Interfaces;
 using Domic.Domain.Permission.Events;
 using Domic.Domain.PermissionUser.Contracts.Interfaces;

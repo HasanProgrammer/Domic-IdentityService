@@ -1,10 +1,10 @@
 using Domic.Persistence.Configs.Q;
-using Karami.Core.Persistence.Configs;
-using Karami.Domain.Permission.Entities;
-using Karami.Domain.PermissionUser.Entities;
-using Karami.Domain.Role.Entities;
-using Karami.Domain.RoleUser.Entities;
-using Karami.Domain.User.Entities;
+using Domic.Core.Persistence.Configs;
+using Domic.Domain.Permission.Entities;
+using Domic.Domain.PermissionUser.Entities;
+using Domic.Domain.Role.Entities;
+using Domic.Domain.RoleUser.Entities;
+using Domic.Domain.User.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Domic.Persistence.Contexts.Q;

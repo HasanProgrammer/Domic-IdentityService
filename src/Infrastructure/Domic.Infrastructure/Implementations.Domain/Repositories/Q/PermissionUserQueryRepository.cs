@@ -1,5 +1,5 @@
-﻿using Karami.Domain.PermissionUser.Contracts.Interfaces;
-using Karami.Domain.PermissionUser.Entities;
+﻿using Domic.Domain.PermissionUser.Contracts.Interfaces;
+using Domic.Domain.PermissionUser.Entities;
 using Domic.Persistence.Contexts.Q;
 using Microsoft.EntityFrameworkCore;
 

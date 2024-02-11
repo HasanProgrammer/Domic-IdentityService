@@ -1,6 +1,6 @@
 using Domic.Domain.Permission.Entities;
 using Domic.Domain.User.Entities;
-using Karami.Core.Domain.Contracts.Abstracts;
+using Domic.Core.Domain.Contracts.Abstracts;
 
 namespace Domic.Domain.PermissionUser.Entities;
 

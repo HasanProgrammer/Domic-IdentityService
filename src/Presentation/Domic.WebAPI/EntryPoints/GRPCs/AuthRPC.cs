@@ -1,7 +1,7 @@
 ﻿using Grpc.Core;
-using Karami.Core.Grpc.Auth;
-using Karami.Core.UseCase.Contracts.Interfaces;
-using Karami.UseCase.UserUseCase.Commands.SignIn;
+using Domic.Core.Auth.Grpc;
+using Domic.Core.UseCase.Contracts.Interfaces;
+using Domic.UseCase.UserUseCase.Commands.SignIn;
 using Domic.WebAPI.Frameworks.Extensions.Mappers.UserMappers;
 
 namespace Domic.WebAPI.EntryPoints.GRPCs;

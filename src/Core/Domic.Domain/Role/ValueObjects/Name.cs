@@ -1,5 +1,5 @@
-﻿using Karami.Core.Domain.Contracts.Abstracts;
-using Karami.Core.Domain.Exceptions;
+﻿using Domic.Core.Domain.Contracts.Abstracts;
+using Domic.Core.Domain.Exceptions;
 
 namespace Domic.Domain.Role.ValueObjects;
 

@@ -1,5 +1,5 @@
-﻿using Karami.Core.UseCase.Attributes;
-using Karami.Core.UseCase.Contracts.Interfaces;
+﻿using Domic.Core.UseCase.Attributes;
+using Domic.Core.UseCase.Contracts.Interfaces;
 using Domic.Domain.Commons.Contracts.Interfaces;
 using Domic.Domain.User.Events;
 

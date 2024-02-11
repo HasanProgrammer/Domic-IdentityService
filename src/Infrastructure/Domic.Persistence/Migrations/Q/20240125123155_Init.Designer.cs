@@ -24,7 +24,7 @@ namespace Domic.Persistence.Migrations.Q
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Karami.Core.Domain.Entities.Event", b =>
+            modelBuilder.Entity("Domic.Core.Domain.Entities.Event", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");

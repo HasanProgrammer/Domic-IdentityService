@@ -1,4 +1,4 @@
-﻿using Karami.Core.UseCase.Contracts.Interfaces;
+﻿using Domic.Core.UseCase.Contracts.Interfaces;
 
 namespace Domic.UseCase.UserUseCase.Commands.SignIn;
 

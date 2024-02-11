@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Karami.WebAPI": {
+    "Domic.WebAPI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": false,

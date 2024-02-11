@@ -1,6 +1,6 @@
 using Domic.Domain.Role.Entities;
 using Domic.Domain.User.Entities;
-using Karami.Core.Domain.Contracts.Abstracts;
+using Domic.Core.Domain.Contracts.Abstracts;
 
 namespace Domic.Domain.RoleUser.Entities;
 
