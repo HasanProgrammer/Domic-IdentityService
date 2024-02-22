@@ -24,10 +24,9 @@ builder.RegisterELK();
 builder.RegisterEntityFrameworkCoreQuery<SQLContext>();
 builder.RegisterQueryRepositories();
 builder.RegisterCommandQueryUseCases();
-builder.RegisterMessageBroker();
-builder.RegisterJobs();
 builder.RegisterGrpcServer();
-builder.RegisterEventsSubscriber();
+builder.RegisterMessageBroker();
+builder.RegisterEventsSubscriber();t
 builder.RegisterServices();
 
 builder.Services.AddMvc();

@@ -12,6 +12,7 @@ public static class IConfigurationBuilderExtension
         IHostEnvironment hostEnvironment
     )
     {
+        var config       = Path.Combine(hostEnvironment.ContentRootPath, "Configs", "Config.json");
         var service      = Path.Combine(hostEnvironment.ContentRootPath, "Configs", "Service.json");
         var jsonWebToken = Path.Combine(hostEnvironment.ContentRootPath, "Configs", "JsonWebToken.json");
         var jsonResult   = Path.Combine(hostEnvironment.ContentRootPath, "Configs", "JsonResult.json");
@@ -19,6 +20,7 @@ public static class IConfigurationBuilderExtension
         
         configurationBuilder.AddJsonFile(jsonResult   , optional: true, reloadOnChange: true)
                             .AddJsonFile(license      , optional: true, reloadOnChange: true)
+                            .AddJsonFile(config       , optional: true, reloadOnChange: true)
                             .AddJsonFile(jsonWebToken , optional: true, reloadOnChange: true)
                             .AddJsonFile(service      , optional: true, reloadOnChange: true);
 
