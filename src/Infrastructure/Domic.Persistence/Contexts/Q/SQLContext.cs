@@ -36,8 +36,7 @@ public partial class SQLContext
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-
-        builder.ApplyConfiguration(new EventConfig());
+        
         builder.ApplyConfiguration(new UserQueryConfig());
         builder.ApplyConfiguration(new RoleUserQueryConfig());
         builder.ApplyConfiguration(new RoleQueryConfig());

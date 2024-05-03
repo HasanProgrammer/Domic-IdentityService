@@ -42,53 +42,6 @@ namespace Domic.Persistence.Migrations.Q
                     b.ToTable("ConsumerEvents", (string)null);
                 });
 
-            modelBuilder.Entity("Domic.Core.Domain.Entities.Event", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("Action")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedAt_EnglishDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("CreatedAt_PersianDate")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("IsActive")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IsDeleted")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Payload")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Service")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Table")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Type")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdatedAt_EnglishDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UpdatedAt_PersianDate")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("User")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Events", (string)null);
-                });
-
             modelBuilder.Entity("Domic.Domain.Permission.Entities.PermissionQuery", b =>
                 {
                     b.Property<string>("Id")
