@@ -1,4 +1,5 @@
-﻿using Domic.Core.UseCase.Attributes;
+﻿using Domic.Core.Common.ClassConsts;
+using Domic.Core.UseCase.Attributes;
 using Domic.Core.UseCase.Contracts.Interfaces;
 using Domic.Domain.Permission.Contracts.Interfaces;
 using Domic.Domain.Permission.Entities;
@@ -12,8 +13,8 @@ public class CreatePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
 
     public CreatePermissionConsumerEventBus(IPermissionQueryRepository permissionQueryRepository)
         => _permissionQueryRepository = permissionQueryRepository;
-    
-    [WithTransaction]
+
+    [TransactionConfig(Type = TransactionType.Query)]
     public void Handle(PermissionCreated @event)
     {
         var targetPermission = _permissionQueryRepository.FindByIdAsync(@event.Id, default).Result;

@@ -10,6 +10,20 @@ namespace Domic.Persistence.Migrations.Q
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "ConsumerEvents",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreatedAt_EnglishDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedAt_PersianDate = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ConsumerEvents", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Events",
                 columns: table => new
                 {
@@ -22,14 +36,10 @@ namespace Domic.Persistence.Migrations.Q
                     User = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreatedAt_EnglishDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     CreatedAt_PersianDate = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UpdatedAt_EnglishDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedAt_PersianDate = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UpdatedAt_EnglishDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    UpdatedAt_PersianDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsActive = table.Column<int>(type: "int", nullable: false),
-                    IsDeleted = table.Column<int>(type: "int", nullable: false),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UpdatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreatedRole = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UpdatedRole = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    IsDeleted = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -235,6 +245,9 @@ namespace Domic.Persistence.Migrations.Q
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "ConsumerEvents");
+
             migrationBuilder.DropTable(
                 name: "Events");
 

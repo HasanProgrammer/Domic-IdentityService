@@ -1,4 +1,5 @@
-﻿using Domic.Core.UseCase.Attributes;
+﻿using Domic.Core.Common.ClassConsts;
+using Domic.Core.UseCase.Attributes;
 using Domic.Core.UseCase.Contracts.Interfaces;
 using Domic.Domain.Permission.Contracts.Interfaces;
 using Domic.Domain.Permission.Events;
@@ -11,8 +12,8 @@ public class UpdatePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
 
     public UpdatePermissionConsumerEventBus(IPermissionQueryRepository permissionQueryRepository)
         => _permissionQueryRepository = permissionQueryRepository;
-    
-    [WithTransaction]
+
+    [TransactionConfig(Type = TransactionType.Query)]
     public void Handle(PermissionUpdated @event)
     {
         var targetPermission = _permissionQueryRepository.FindByIdAsync(@event.Id, default).GetAwaiter().GetResult();

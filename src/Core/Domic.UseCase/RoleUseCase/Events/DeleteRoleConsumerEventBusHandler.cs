@@ -1,4 +1,5 @@
-﻿using Domic.Core.Domain.Enumerations;
+﻿using Domic.Core.Common.ClassConsts;
+using Domic.Core.Domain.Enumerations;
 using Domic.Core.UseCase.Attributes;
 using Domic.Core.UseCase.Contracts.Interfaces;
 using Domic.Domain.Permission.Contracts.Interfaces;
@@ -26,8 +27,8 @@ public class DeleteRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleDe
         _permissionUserQueryRepository = permissionUserQueryRepository;
         _roleUserQueryRepository       = roleUserQueryRepository;
     }
-    
-    [WithTransaction]
+
+    [TransactionConfig(Type = TransactionType.Query)]
     public void Handle(RoleDeleted @event)
     {
         var targetRole = _roleQueryRepository.FindByIdEagerLoadingAsync(@event.Id, default).Result;

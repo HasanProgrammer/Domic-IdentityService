@@ -1,4 +1,5 @@
-﻿using Domic.Core.Domain.Contracts.Interfaces;
+﻿using Domic.Core.Common.ClassConsts;
+using Domic.Core.Domain.Contracts.Interfaces;
 using Domic.Core.Domain.Enumerations;
 using Domic.Core.Domain.Extensions;
 using Domic.Core.UseCase.Attributes;
@@ -31,7 +32,7 @@ public class CreateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserCr
         _globalUniqueIdGenerator       = globalUniqueIdGenerator;
     }
     
-    [WithTransaction]
+    [TransactionConfig(Type = TransactionType.Query)]
     public void Handle(UserCreated @event)
     {
         var targetUser = _userQueryRepository.FindByIdAsync(@event.Id, default).Result;

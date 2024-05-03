@@ -1,3 +1,4 @@
+using Domic.Core.Domain.Entities;
 using Domic.Persistence.Configs.Q;
 using Domic.Core.Persistence.Configs;
 using Domic.Domain.Permission.Entities;
@@ -26,6 +27,7 @@ public partial class SQLContext
     public DbSet<RoleQuery> Roles                     { get; set; }
     public DbSet<PermissionQuery> Permissions         { get; set; }
     public DbSet<PermissionUserQuery> PermissionUsers { get; set; }
+    public DbSet<ConsumerEventQuery> ConsumerEvents   { get; set; }
 }
 
 /*Config*/
@@ -41,5 +43,6 @@ public partial class SQLContext
         builder.ApplyConfiguration(new RoleQueryConfig());
         builder.ApplyConfiguration(new PermissionQueryConfig());
         builder.ApplyConfiguration(new PermissionUserQueryConfig());
+        builder.ApplyConfiguration(new ConsumerEventQueryConfig());
     }
 }
