@@ -11,24 +11,24 @@ namespace Domic.UseCase.UserUseCase.Commands.SignIn;
 
 public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
 {
-    private readonly IConfiguration       _configuration;
-    private readonly IJsonWebToken        _jsonWebToken;
-    private readonly IUserQueryRepository _userQueryRepository;
-    private readonly IRedisCache          _redisCache;
-    private readonly ISerializer          _serializer;
+    private readonly IConfiguration            _configuration;
+    private readonly IJsonWebToken             _jsonWebToken;
+    private readonly IUserQueryRepository      _userQueryRepository;
+    private readonly ISerializer               _serializer;
+    private readonly IExternalDistributedCache _distributedCache;
 
     public SignInCommandHandler(
         IUserQueryRepository userQueryRepository, 
         IConfiguration configuration,
         IJsonWebToken jsonWebToken,
-        IRedisCache redisCache,
-        ISerializer serializer
+        ISerializer serializer,
+        IExternalDistributedCache distributedCache
     )
     {
         _configuration       = configuration;
         _jsonWebToken        = jsonWebToken;
         _userQueryRepository = userQueryRepository;
-        _redisCache          = redisCache;
+        _distributedCache    = distributedCache;
         _serializer          = serializer;
     }
 
@@ -45,7 +45,7 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
         var roles       = targetUser.RoleUsers.Select(role => role.Role.Name);
         var permissions = targetUser.PermissionUsers.Select(permission => permission.Permission.Name);
 
-        await _redisCache.SetCacheValueAsync(
+        await _distributedCache.SetCacheValueAsync(
             new KeyValuePair<string, string>($"{command.Username}-permissions", _serializer.Serialize(permissions)),
             cancellationToken: cancellationToken
         );
