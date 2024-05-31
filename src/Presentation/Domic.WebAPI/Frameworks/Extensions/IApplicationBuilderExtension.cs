@@ -1,5 +1,3 @@
 ﻿namespace Domic.WebAPI.Frameworks.Extensions;
 
-public static class IApplicationBuilderExtension
-{
-}
+public static class IApplicationBuilderExtension;

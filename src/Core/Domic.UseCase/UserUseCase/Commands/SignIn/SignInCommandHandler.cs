@@ -13,19 +13,23 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
 {
     private readonly IConfiguration       _configuration;
     private readonly IJsonWebToken        _jsonWebToken;
-    private readonly ISerializer          _serializer;
     private readonly IUserQueryRepository _userQueryRepository;
+    private readonly IRedisCache          _redisCache;
+    private readonly ISerializer          _serializer;
 
-    public SignInCommandHandler(IUserQueryRepository userQueryRepository, 
-        IConfiguration configuration ,
-        IJsonWebToken jsonWebToken   ,
+    public SignInCommandHandler(
+        IUserQueryRepository userQueryRepository, 
+        IConfiguration configuration,
+        IJsonWebToken jsonWebToken,
+        IRedisCache redisCache,
         ISerializer serializer
     )
     {
         _configuration       = configuration;
         _jsonWebToken        = jsonWebToken;
-        _serializer          = serializer;
         _userQueryRepository = userQueryRepository;
+        _redisCache          = redisCache;
+        _serializer          = serializer;
     }
 
     public async Task<string> HandleAsync(SignInCommand command, CancellationToken cancellationToken)
@@ -41,6 +45,11 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
         var roles       = targetUser.RoleUsers.Select(role => role.Role.Name);
         var permissions = targetUser.PermissionUsers.Select(permission => permission.Permission.Name);
 
+        await _redisCache.SetCacheValueAsync(
+            new KeyValuePair<string, string>($"{command.Username}-permissions", _serializer.Serialize(permissions)),
+            cancellationToken: cancellationToken
+        );
+
         var claims = new List<KeyValuePair<string, string>>();
         
         claims.Add(new KeyValuePair<string, string>("UserId", targetUser.Id));
@@ -48,10 +57,6 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
         
         claims.AddRange(
             roles.Select(role => new KeyValuePair<string, string>(ClaimTypes.Role, role)) 
-        );
-        
-        claims.AddRange(
-            permissions.Select(permission => new KeyValuePair<string, string>("Permission", permission)) 
         );
 
         var tokenParameter = new TokenParameterDto {
