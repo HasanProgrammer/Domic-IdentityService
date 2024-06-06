@@ -27,6 +27,9 @@ namespace Domic.Persistence.Migrations.Q
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("CountOfRetry")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CreatedAt_EnglishDate")
                         .HasColumnType("datetime2");
 

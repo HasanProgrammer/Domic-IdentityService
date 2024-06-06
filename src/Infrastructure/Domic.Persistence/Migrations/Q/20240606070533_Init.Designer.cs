@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Domic.Persistence.Migrations.Q
 {
     [DbContext(typeof(SQLContext))]
-    [Migration("20240503130917_Init")]
+    [Migration("20240606070533_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,6 +28,9 @@ namespace Domic.Persistence.Migrations.Q
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("CountOfRetry")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt_EnglishDate")
                         .HasColumnType("datetime2");
