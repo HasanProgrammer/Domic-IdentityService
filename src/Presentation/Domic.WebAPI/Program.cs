@@ -27,6 +27,7 @@ builder.RegisterCommandQueryUseCases();
 builder.RegisterGrpcServer();
 builder.RegisterMessageBroker();
 builder.RegisterEventsSubscriber();
+builder.RegisterRedisCaching();
 builder.RegisterServices();
 
 builder.Services.AddMvc();
