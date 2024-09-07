@@ -26,6 +26,7 @@ builder.RegisterQueryRepositories();
 builder.RegisterCommandQueryUseCases();
 builder.RegisterGrpcServer();
 builder.RegisterMessageBroker();
+builder.RegisterEventStreamBroker();
 builder.RegisterEventsSubscriber();
 builder.RegisterDistributedCaching();
 builder.RegisterServices();

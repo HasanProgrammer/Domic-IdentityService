@@ -1,6 +1,19 @@
 {
   "IsExternalBrokerConsumingAsync": false,
   "IsInternalBrokerConsumingAsync": false,
+  "ExternalTopicConfig": {
+    "Throttle": [
+      {
+        "Active": false,
+        "Topic": "User",
+        "Limitation": 1000
+      },
+      {
+        "Topic": "AuthService-Retry-User",
+        "Limitation": 1000
+      }
+    ]
+  },
   "ExternalQueueConfig": {
     "Throttle": [
       {
