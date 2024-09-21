@@ -4,7 +4,7 @@ using Domic.Core.Domain.Contracts.Abstracts;
 
 namespace Domic.Domain.Permission.Events;
 
-[MessageBroker(Queue = Broker.Auth_Permission_Queue)]
+[EventConfig(Queue = Broker.Auth_Permission_Queue)]
 public class PermissionUpdated : UpdateDomainEvent<string>
 {
     public string RoleId { get; init; }
