@@ -1,0 +1,4 @@
+
+ Date: 1403/07/02 | Message: Object reference not set to an instance of an object. | Source: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Domic.Core.WebAPI.Jobs.ServiceRegisteryJob.StartAsync(CancellationToken cancellationToken) 
+
