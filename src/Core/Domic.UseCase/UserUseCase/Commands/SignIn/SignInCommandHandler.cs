@@ -32,6 +32,8 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
         _serializer          = serializer;
     }
 
+    public Task BeforeHandleAsync(SignInCommand command, CancellationToken cancellationToken) => Task.CompletedTask;
+
     public async Task<string> HandleAsync(SignInCommand command, CancellationToken cancellationToken)
     {
         var targetUser =
@@ -68,4 +70,6 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
 
         return _jsonWebToken.Generate(tokenParameter, claims.ToArray());
     }
+
+    public Task AfterHandleAsync(SignInCommand command, CancellationToken cancellationToken) => Task.CompletedTask;
 }

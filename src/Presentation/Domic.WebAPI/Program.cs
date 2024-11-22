@@ -32,6 +32,7 @@ builder.RegisterDistributedCaching();
 builder.RegisterServices();
 
 builder.Services.AddMvc();
+builder.Services.AddHttpContextAccessor();
 
 #endregion
 

@@ -14,6 +14,8 @@ public class CreatePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
     public CreatePermissionConsumerEventBus(IPermissionQueryRepository permissionQueryRepository)
         => _permissionQueryRepository = permissionQueryRepository;
 
+    public void BeforeHandle(PermissionCreated @event){}
+
     [TransactionConfig(Type = TransactionType.Query)]
     public void Handle(PermissionCreated @event)
     {
@@ -34,4 +36,6 @@ public class CreatePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
             _permissionQueryRepository.Add(newPermission);
         }
     }
+
+    public void AfterHandle(PermissionCreated @event){}
 }

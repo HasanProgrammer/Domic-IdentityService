@@ -12,9 +12,13 @@ public class DeleteUserConsumerEventBusHandler : IConsumerEventBusHandler<UserDe
 
     public DeleteUserConsumerEventBusHandler(IQueryUnitOfWork queryUnitOfWork) => _queryUnitOfWork = queryUnitOfWork;
 
+    public void BeforeHandle(UserDeleted @event){}
+
     [TransactionConfig(Type = TransactionType.Query)]
     public void Handle(UserDeleted @event)
     {
         
     }
+
+    public void AfterHandle(UserDeleted @event){}
 }

@@ -13,6 +13,8 @@ public class UpdateRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleUp
     public UpdateRoleConsumerEventBusHandler(IRoleQueryRepository roleQueryRepository) 
         => _roleQueryRepository = roleQueryRepository;
 
+    public void BeforeHandle(RoleUpdated @event){}
+
     [TransactionConfig(Type = TransactionType.Query)]
     public void Handle(RoleUpdated @event)
     {
@@ -26,4 +28,6 @@ public class UpdateRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleUp
 
         _roleQueryRepository.Change(targetRole);
     }
+
+    public void AfterHandle(RoleUpdated @event){}
 }

@@ -30,7 +30,9 @@ public class UpdateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserUp
         _permissionUserQueryRepository = permissionUserQueryRepository;
         _globalUniqueIdGenerator       = globalUniqueIdGenerator;
     }
-    
+
+    public void BeforeHandle(UserUpdated @event){}
+
     [TransactionConfig(Type = TransactionType.Query)]
     public void Handle(UserUpdated @event)
     {
@@ -58,7 +60,9 @@ public class UpdateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserUp
             @event.UpdatedAt_EnglishDate, @event.UpdatedAt_PersianDate
         );
     }
-    
+
+    public void AfterHandle(UserUpdated @event){}
+
     /*---------------------------------------------------------------*/
     
     private void _roleUserBuilder(string userId, IEnumerable<string> roleIds, string updatedBy, string updatedRole,

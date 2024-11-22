@@ -31,7 +31,9 @@ public class CreateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserCr
         _permissionUserQueryRepository = permissionUserQueryRepository;
         _globalUniqueIdGenerator       = globalUniqueIdGenerator;
     }
-    
+
+    public void BeforeHandle(UserCreated @event){}
+
     [TransactionConfig(Type = TransactionType.Query)]
     public void Handle(UserCreated @event)
     {
@@ -63,7 +65,9 @@ public class CreateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserCr
             );
         }
     }
-    
+
+    public void AfterHandle(UserCreated @event){}
+
     /*---------------------------------------------------------------*/
     
     private void _roleUserBuilder(string userId, IEnumerable<string> roleIds, string createdBy, string createdRole,

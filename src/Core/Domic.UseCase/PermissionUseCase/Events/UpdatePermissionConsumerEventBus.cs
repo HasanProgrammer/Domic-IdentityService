@@ -13,6 +13,8 @@ public class UpdatePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
     public UpdatePermissionConsumerEventBus(IPermissionQueryRepository permissionQueryRepository)
         => _permissionQueryRepository = permissionQueryRepository;
 
+    public void BeforeHandle(PermissionUpdated @event){}
+
     [TransactionConfig(Type = TransactionType.Query)]
     public void Handle(PermissionUpdated @event)
     {
@@ -30,4 +32,6 @@ public class UpdatePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
             _permissionQueryRepository.Change(targetPermission);
         }
     }
+
+    public void AfterHandle(PermissionUpdated @event){}
 }
