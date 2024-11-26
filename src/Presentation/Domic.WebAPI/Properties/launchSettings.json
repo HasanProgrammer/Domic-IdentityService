@@ -17,7 +17,7 @@
       "applicationUrl": "https://localhost:3001;http://localhost:3000",
       "environmentVariables": {
         "Elastic-Host": "http://localhost:9200",
-        "Elastic-Index": "auth",
+        "Elastic-Index": "identity",
         "Elastic-Username": "domic",
         "Elastic-Password": "Domic123!@#",
         "E-RabbitMQ-Host": "localhost",
@@ -35,7 +35,7 @@
         "I-RedisConnectionString": "127.0.0.1:6379",
         "MongoConnectionString": "",
         "C-SqlServerConnectionString": "",
-        "Q-SqlServerConnectionString": "Server=127.0.0.1,1633;Database=Q-AuthService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;",
+        "Q-SqlServerConnectionString": "Server=127.0.0.1,1633;Database=Q-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;",
         "Host": "localhost",
         "Port": "3001",
         "ASPNETCORE_ENVIRONMENT": "Development"
