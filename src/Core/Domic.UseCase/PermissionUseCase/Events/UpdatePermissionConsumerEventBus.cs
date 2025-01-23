@@ -13,25 +13,27 @@ public class UpdatePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
     public UpdatePermissionConsumerEventBus(IPermissionQueryRepository permissionQueryRepository)
         => _permissionQueryRepository = permissionQueryRepository;
 
-    public void BeforeHandle(PermissionUpdated @event){}
+    public Task BeforeHandleAsync(PermissionUpdated @event, CancellationToken cancellationToken)
+        => Task.CompletedTask;
 
     [TransactionConfig(Type = TransactionType.Query)]
-    public void Handle(PermissionUpdated @event)
+    public async Task HandleAsync(PermissionUpdated @event, CancellationToken cancellationToken)
     {
-        var targetPermission = _permissionQueryRepository.FindByIdAsync(@event.Id, default).GetAwaiter().GetResult();
+        var targetPermission = await _permissionQueryRepository.FindByIdAsync(@event.Id, cancellationToken);
             
-        if (targetPermission is not null) //Replication management
+        if (targetPermission is not null) //replication management
         {
-            targetPermission.RoleId      = @event.RoleId;
-            targetPermission.UpdatedBy   = @event.UpdatedBy;
-            targetPermission.UpdatedRole = @event.UpdatedRole;
-            targetPermission.Name        = @event.Name;
+            targetPermission.RoleId                = @event.RoleId;
+            targetPermission.Name                  = @event.Name;
+            targetPermission.UpdatedBy             = @event.UpdatedBy;
+            targetPermission.UpdatedRole           = @event.UpdatedRole;
             targetPermission.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;
             targetPermission.UpdatedAt_PersianDate = @event.UpdatedAt_PersianDate;
         
-            _permissionQueryRepository.Change(targetPermission);
+            await _permissionQueryRepository.ChangeAsync(targetPermission, cancellationToken);
         }
     }
 
-    public void AfterHandle(PermissionUpdated @event){}
+    public Task AfterHandleAsync(PermissionUpdated @event, CancellationToken cancellationToken)
+        => Task.CompletedTask;
 }

@@ -13,21 +13,21 @@ public class UpdateRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleUp
     public UpdateRoleConsumerEventBusHandler(IRoleQueryRepository roleQueryRepository) 
         => _roleQueryRepository = roleQueryRepository;
 
-    public void BeforeHandle(RoleUpdated @event){}
+    public Task BeforeHandleAsync(RoleUpdated @event, CancellationToken cancellationToken) => Task.CompletedTask;
 
     [TransactionConfig(Type = TransactionType.Query)]
-    public void Handle(RoleUpdated @event)
+    public async Task HandleAsync(RoleUpdated @event, CancellationToken cancellationToken)
     {
-        var targetRole = _roleQueryRepository.FindByIdAsync(@event.Id, default).Result;
+        var targetRole = await _roleQueryRepository.FindByIdAsync(@event.Id, cancellationToken);
         
-        targetRole.UpdatedBy   = @event.UpdatedBy;
-        targetRole.UpdatedRole = @event.UpdatedRole;
-        targetRole.Name        = @event.Name;
+        targetRole.Name                  = @event.Name;
+        targetRole.UpdatedBy             = @event.UpdatedBy;
+        targetRole.UpdatedRole           = @event.UpdatedRole;
         targetRole.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;
         targetRole.UpdatedAt_PersianDate = @event.UpdatedAt_PersianDate;
 
-        _roleQueryRepository.Change(targetRole);
+        await _roleQueryRepository.ChangeAsync(targetRole, cancellationToken);
     }
 
-    public void AfterHandle(RoleUpdated @event){}
+    public Task AfterHandleAsync(RoleUpdated @event, CancellationToken cancellationToken) => Task.CompletedTask;
 }

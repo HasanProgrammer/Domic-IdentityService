@@ -21,36 +21,38 @@ public class DeletePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
         _permissionUserQueryRepository = permissionUserQueryRepository;
     }
 
-    public void BeforeHandle(PermissionDeleted @event){}
+    public Task BeforeHandleAsync(PermissionDeleted @event, CancellationToken cancellationToken)
+        => Task.CompletedTask;
 
     [TransactionConfig(Type = TransactionType.Query)]
-    public void Handle(PermissionDeleted @event)
+    public async Task HandleAsync(PermissionDeleted @event, CancellationToken cancellationToken)
     {
-        var targetPermission = _permissionQueryRepository.FindByIdAsync(@event.Id, default).Result;
+        var targetPermission = await _permissionQueryRepository.FindByIdAsync(@event.Id, cancellationToken);
             
-        if (targetPermission is not null) //Replication management
+        if (targetPermission is not null) //replication management
         {
             #region SoftDeletePermission
 
-            targetPermission.UpdatedBy   = @event.UpdatedBy;
-            targetPermission.UpdatedRole = @event.UpdatedRole;
-            targetPermission.IsDeleted   = IsDeleted.Delete;
+            targetPermission.IsDeleted             = IsDeleted.Delete;
+            targetPermission.UpdatedBy             = @event.UpdatedBy;
+            targetPermission.UpdatedRole           = @event.UpdatedRole;
             targetPermission.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;
             targetPermission.UpdatedAt_PersianDate = @event.UpdatedAt_PersianDate;
         
-            _permissionQueryRepository.Change(targetPermission);
+            await _permissionQueryRepository.ChangeAsync(targetPermission, cancellationToken);
 
             #endregion
 
             #region HardDelete PermissionUser
 
-            var permissionUsers = _permissionUserQueryRepository.FindAllByPermissionIdAsync(@event.Id, default).Result;
+            var permissionUsers = await _permissionUserQueryRepository.FindAllByPermissionIdAsync(@event.Id, cancellationToken);
 
-            _permissionUserQueryRepository.RemoveRange(permissionUsers);
+            await _permissionUserQueryRepository.RemoveRangeAsync(permissionUsers, cancellationToken);
 
             #endregion
         }
     }
 
-    public void AfterHandle(PermissionDeleted @event){}
+    public Task AfterHandleAsync(PermissionDeleted @event, CancellationToken cancellationToken)
+        => Task.CompletedTask;
 }

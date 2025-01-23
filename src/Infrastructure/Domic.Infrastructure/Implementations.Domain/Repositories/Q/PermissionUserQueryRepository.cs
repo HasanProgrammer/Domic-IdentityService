@@ -16,12 +16,6 @@ public partial class PermissionUserQueryRepository : IPermissionUserQueryReposit
 //Transaction
 public partial class PermissionUserQueryRepository
 {
-    public void Add(PermissionUserQuery entity) => _context.PermissionUsers.Add(entity);
-
-    public void Remove(PermissionUserQuery entity) => _context.PermissionUsers.Remove(entity);
-
-    public void RemoveRange(IEnumerable<PermissionUserQuery> entities) => _context.PermissionUsers.RemoveRange(entities);
-
     public Task RemoveRangeAsync(IEnumerable<PermissionUserQuery> entities, CancellationToken cancellationToken)
     {
         _context.PermissionUsers.RemoveRange(entities);

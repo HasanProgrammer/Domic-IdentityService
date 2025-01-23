@@ -8,17 +8,6 @@ public interface IPermissionUserQueryRepository : IQueryRepository<PermissionUse
     /// <summary>
     /// 
     /// </summary>
-    /// <param name="userId"></param>
-    /// <param name="cancellationToken"></param>
-    /// <returns></returns>
-    /// <exception cref="NotImplementedException"></exception>
-    public Task<IEnumerable<PermissionUserQuery>> FindAllByUserIdAsync(string userId, 
-        CancellationToken cancellationToken
-    ) => throw new NotImplementedException();
-    
-    /// <summary>
-    /// 
-    /// </summary>
     /// <param name="permissionId"></param>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>

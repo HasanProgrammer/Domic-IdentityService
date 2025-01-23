@@ -3,7 +3,4 @@ using Domic.Core.Domain.Contracts.Interfaces;
 
 namespace Domic.Domain.Role.Contracts.Interfaces;
 
-public interface IRoleQueryRepository : IQueryRepository<RoleQuery, string>
-{
-    
-}
+public interface IRoleQueryRepository : IQueryRepository<RoleQuery, string>;

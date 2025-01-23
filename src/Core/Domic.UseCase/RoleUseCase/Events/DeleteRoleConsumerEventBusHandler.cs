@@ -28,12 +28,12 @@ public class DeleteRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleDe
         _roleUserQueryRepository       = roleUserQueryRepository;
     }
 
-    public void BeforeHandle(RoleDeleted @event){}
+    public Task BeforeHandleAsync(RoleDeleted @event, CancellationToken cancellationToken) => Task.CompletedTask;
 
     [TransactionConfig(Type = TransactionType.Query)]
-    public void Handle(RoleDeleted @event)
+    public async Task HandleAsync(RoleDeleted @event, CancellationToken cancellationToken)
     {
-        var targetRole = _roleQueryRepository.FindByIdEagerLoadingAsync(@event.Id, default).Result;
+        var targetRole = await _roleQueryRepository.FindByIdEagerLoadingAsync(@event.Id, cancellationToken);
             
         if (targetRole is not null) //Replication management
         {
@@ -45,7 +45,7 @@ public class DeleteRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleDe
             targetRole.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;
             targetRole.UpdatedAt_PersianDate = @event.UpdatedAt_PersianDate;
         
-            _roleQueryRepository.Change(targetRole);
+            await _roleQueryRepository.ChangeAsync(targetRole, cancellationToken);
 
             #endregion
         
@@ -59,16 +59,16 @@ public class DeleteRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleDe
                 permission.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;
                 permission.UpdatedAt_PersianDate = @event.UpdatedAt_PersianDate;
             
-                _permissionQueryRepository.Change(permission);
+                await _permissionQueryRepository.ChangeAsync(permission, cancellationToken);
             }
 
             #endregion
         
             #region HardDeleteRoleUser
 
-            var roleUsers = _roleUserQueryRepository.FindAllByRoleIdAsync(@event.Id, default).Result;
+            var roleUsers = await _roleUserQueryRepository.FindAllByRoleIdAsync(@event.Id, cancellationToken);
         
-            _roleUserQueryRepository.RemoveRange(roleUsers);
+            await _roleUserQueryRepository.RemoveRangeAsync(roleUsers, cancellationToken);
 
             #endregion
         
@@ -77,14 +77,14 @@ public class DeleteRoleConsumerEventBusHandler : IConsumerEventBusHandler<RoleDe
             foreach (var permission in targetRole.Permissions)
             {
                 var permissionUsers =
-                    _permissionUserQueryRepository.FindAllByPermissionIdAsync(permission.Id, default).Result;
+                    await _permissionUserQueryRepository.FindAllByPermissionIdAsync(permission.Id, cancellationToken);
         
-                _permissionUserQueryRepository.RemoveRange(permissionUsers);
+                await _permissionUserQueryRepository.RemoveRangeAsync(permissionUsers, cancellationToken);
             }
 
             #endregion
         }
     }
 
-    public void AfterHandle(RoleDeleted @event){}
+    public Task AfterHandleAsync(RoleDeleted @event, CancellationToken cancellationToken) => Task.CompletedTask;
 }

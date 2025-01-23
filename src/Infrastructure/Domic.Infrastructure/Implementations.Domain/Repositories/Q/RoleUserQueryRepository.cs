@@ -16,8 +16,6 @@ public partial class RoleUserQueryRepository : IRoleUserQueryRepository
 //Transaction
 public partial class RoleUserQueryRepository
 {
-    public void RemoveRange(IEnumerable<RoleUserQuery> entities) => _context.RoleUsers.RemoveRange(entities);
-
     public Task RemoveRangeAsync(IEnumerable<RoleUserQuery> entities, CancellationToken cancellationToken)
     {
         _context.RoleUsers.RemoveRange(entities);

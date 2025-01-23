@@ -14,28 +14,28 @@ public class CreatePermissionConsumerEventBus : IConsumerEventBusHandler<Permiss
     public CreatePermissionConsumerEventBus(IPermissionQueryRepository permissionQueryRepository)
         => _permissionQueryRepository = permissionQueryRepository;
 
-    public void BeforeHandle(PermissionCreated @event){}
+    public Task BeforeHandleAsync(PermissionCreated @event, CancellationToken cancellationToken) => Task.CompletedTask;
 
     [TransactionConfig(Type = TransactionType.Query)]
-    public void Handle(PermissionCreated @event)
+    public async Task HandleAsync(PermissionCreated @event, CancellationToken cancellationToken)
     {
-        var targetPermission = _permissionQueryRepository.FindByIdAsync(@event.Id, default).Result;
+        var targetPermission = await _permissionQueryRepository.FindByIdAsync(@event.Id, cancellationToken);
         
-        if (targetPermission is null) //Replication management
+        if (targetPermission is null) //replication management
         {
             var newPermission = new PermissionQuery {
-                Id          = @event.Id          ,
-                CreatedBy   = @event.CreatedBy   ,
-                CreatedRole = @event.CreatedRole ,
-                RoleId      = @event.RoleId      ,
-                Name        = @event.Name        ,
+                Id                    = @event.Id          ,
+                RoleId                = @event.RoleId      ,
+                Name                  = @event.Name        ,
+                CreatedBy             = @event.CreatedBy   ,
+                CreatedRole           = @event.CreatedRole ,
                 CreatedAt_EnglishDate = @event.CreatedAt_EnglishDate,
                 CreatedAt_PersianDate = @event.CreatedAt_PersianDate
             };
         
-            _permissionQueryRepository.Add(newPermission);
+            await _permissionQueryRepository.AddAsync(newPermission, cancellationToken);
         }
     }
 
-    public void AfterHandle(PermissionCreated @event){}
+    public Task AfterHandleAsync(PermissionCreated @event, CancellationToken cancellationToken) => Task.CompletedTask;
 }
