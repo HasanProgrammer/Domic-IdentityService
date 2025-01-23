@@ -61,11 +61,11 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
 
         var claims = new List<KeyValuePair<string, string>>();
         
-        claims.Add(new KeyValuePair<string, string>("UserId", targetUser.Id));
-        claims.Add(new KeyValuePair<string, string>(ClaimTypes.Name, targetUser.Username));
+        claims.Add(new KeyValuePair<string, string>("user_identity", targetUser.Id));
+        claims.Add(new KeyValuePair<string, string>("username", targetUser.Username));
         
         claims.AddRange(
-            roles.Select(role => new KeyValuePair<string, string>(ClaimTypes.Role, role)) 
+            roles.Select(role => new KeyValuePair<string, string>("role", role)) 
         );
 
         var tokenParameter = new TokenParameterDto {
