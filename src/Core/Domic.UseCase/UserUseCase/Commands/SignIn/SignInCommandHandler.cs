@@ -1,6 +1,7 @@
 ﻿using System.Security.Claims;
 using Domic.Core.Common.ClassConsts;
 using Domic.Core.Domain.Contracts.Interfaces;
+using Domic.Core.Domain.Enumerations;
 using Domic.Core.Domain.Extensions;
 using Domic.Core.UseCase.Attributes;
 using Domic.Core.UseCase.Contracts.Interfaces;
@@ -41,6 +42,9 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
     {
         var targetUser =
             await _userQueryRepository.FindByUsernameEagerLoadingAsync(command.Username, cancellationToken);
+
+        if (targetUser.IsActive == IsActive.InActive)
+            throw new UseCaseException("حساب کاربری شما مسدود شده است!");
         
         var hashedPassword = await command.Password.HashAsync(cancellationToken);
         
