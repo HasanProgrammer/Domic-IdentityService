@@ -1,4 +1,5 @@
 ﻿using System.Security.Claims;
+using Domic.Core.Common.ClassConsts;
 using Domic.Core.Domain.Contracts.Interfaces;
 using Domic.Core.Domain.Extensions;
 using Domic.Core.UseCase.Attributes;
@@ -35,7 +36,7 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
 
     public Task BeforeHandleAsync(SignInCommand command, CancellationToken cancellationToken) => Task.CompletedTask;
 
-    [WithTransaction]
+    [WithTransaction(Type = TransactionType.Query)]
     public async Task<string> HandleAsync(SignInCommand command, CancellationToken cancellationToken)
     {
         var targetUser =

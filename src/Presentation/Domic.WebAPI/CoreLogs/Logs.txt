@@ -1,0 +1,66 @@
+
+ Date: 1403/11/04 | Message: Value cannot be null. (Parameter 'serviceType') | Source: System.ArgumentNullException: Value cannot be null. (Parameter 'serviceType')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Domic.Core.Infrastructure.Concretes.Mediator._InvokeHandleMethodAsync[TResult](Object commandHandler, MethodInfo commandHandlerMethod, MethodInfo commandAfterHandlerMethod, ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.Core.Infrastructure.Concretes.Mediator.DispatchAsync[TResult](ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.WebAPI.EntryPoints.GRPCs.AuthRPC.SignIn(SignInRequest request, ServerCallContext context) in D:\Programming\Domic\Domic-IdentityService\src\Presentation\Domic.WebAPI\EntryPoints\GRPCs\AuthRPC.cs:line 35
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Domic.Core.WebAPI.Middlewares.ExceptionHandlerInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) 
+
+
+ Date: 1403/11/04 | Message: Value cannot be null. (Parameter 'serviceType') | Source: System.ArgumentNullException: Value cannot be null. (Parameter 'serviceType')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Domic.Core.Infrastructure.Concretes.Mediator._InvokeHandleMethodAsync[TResult](Object commandHandler, MethodInfo commandHandlerMethod, MethodInfo commandAfterHandlerMethod, ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.Core.Infrastructure.Concretes.Mediator.DispatchAsync[TResult](ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.WebAPI.EntryPoints.GRPCs.AuthRPC.SignIn(SignInRequest request, ServerCallContext context) in D:\Programming\Domic\Domic-IdentityService\src\Presentation\Domic.WebAPI\EntryPoints\GRPCs\AuthRPC.cs:line 35
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Domic.Core.WebAPI.Middlewares.ExceptionHandlerInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) 
+
+
+ Date: 1403/11/04 | Message: Value cannot be null. (Parameter 'serviceType') | Source: System.ArgumentNullException: Value cannot be null. (Parameter 'serviceType')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Domic.Core.Infrastructure.Concretes.Mediator._InvokeHandleMethodAsync[TResult](Object commandHandler, MethodInfo commandHandlerMethod, MethodInfo commandAfterHandlerMethod, ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.Core.Infrastructure.Concretes.Mediator.DispatchAsync[TResult](ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.WebAPI.EntryPoints.GRPCs.AuthRPC.SignIn(SignInRequest request, ServerCallContext context) in D:\Programming\Domic\Domic-IdentityService\src\Presentation\Domic.WebAPI\EntryPoints\GRPCs\AuthRPC.cs:line 35
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Domic.Core.WebAPI.Middlewares.ExceptionHandlerInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) 
+
+
+ Date: 1403/11/04 | Message: Value cannot be null. (Parameter 'serviceType') | Source: System.ArgumentNullException: Value cannot be null. (Parameter 'serviceType')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Domic.Core.Infrastructure.Concretes.Mediator._InvokeHandleMethodAsync[TResult](Object commandHandler, MethodInfo commandHandlerMethod, MethodInfo commandAfterHandlerMethod, ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.Core.Infrastructure.Concretes.Mediator.DispatchAsync[TResult](ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.WebAPI.EntryPoints.GRPCs.AuthRPC.SignIn(SignInRequest request, ServerCallContext context) in D:\Programming\Domic\Domic-IdentityService\src\Presentation\Domic.WebAPI\EntryPoints\GRPCs\AuthRPC.cs:line 35
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Domic.Core.WebAPI.Middlewares.ExceptionHandlerInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) 
+
+
+ Date: 1403/11/04 | Message: Value cannot be null. (Parameter 'serviceType') | Source: System.ArgumentNullException: Value cannot be null. (Parameter 'serviceType')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Domic.Core.Infrastructure.Concretes.Mediator._InvokeHandleMethodAsync[TResult](Object commandHandler, MethodInfo commandHandlerMethod, MethodInfo commandAfterHandlerMethod, ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.Core.Infrastructure.Concretes.Mediator.DispatchAsync[TResult](ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.WebAPI.EntryPoints.GRPCs.AuthRPC.SignIn(SignInRequest request, ServerCallContext context) in D:\Programming\Domic\Domic-IdentityService\src\Presentation\Domic.WebAPI\EntryPoints\GRPCs\AuthRPC.cs:line 35
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Domic.Core.WebAPI.Middlewares.ExceptionHandlerInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) 
+
+
+ Date: 1403/11/04 | Message: Value cannot be null. (Parameter 'serviceType') | Source: System.ArgumentNullException: Value cannot be null. (Parameter 'serviceType')
+   at System.ThrowHelper.Throw(String paramName)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Domic.Core.Infrastructure.Concretes.Mediator._InvokeHandleMethodAsync[TResult](Object commandHandler, MethodInfo commandHandlerMethod, MethodInfo commandAfterHandlerMethod, ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.Core.Infrastructure.Concretes.Mediator.DispatchAsync[TResult](ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.WebAPI.EntryPoints.GRPCs.AuthRPC.SignIn(SignInRequest request, ServerCallContext context) in D:\Programming\Domic\Domic-IdentityService\src\Presentation\Domic.WebAPI\EntryPoints\GRPCs\AuthRPC.cs:line 35
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Domic.Core.WebAPI.Middlewares.ExceptionHandlerInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) 
+
