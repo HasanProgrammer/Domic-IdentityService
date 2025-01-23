@@ -1,6 +1,5 @@
 ﻿using Domic.Domain.User.Contracts.Interfaces;
 using Domic.Domain.User.Entities;
-using Domic.Persistence.Contexts;
 using Domic.Persistence.Contexts.Q;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,9 +16,19 @@ public partial class UserQueryRepository : IUserQueryRepository
 //Transaction
 public partial class UserQueryRepository
 {
-    public void Add(UserQuery entity) => _context.Users.Add(entity);
+    public Task AddAsync(UserQuery entity, CancellationToken cancellationToken)
+    {
+        _context.Users.Add(entity);
 
-    public void Change(UserQuery entity) => _context.Users.Update(entity);
+        return Task.CompletedTask;
+    }
+
+    public Task ChangeAsync(UserQuery entity, CancellationToken cancellationToken)
+    {
+        _context.Users.Update(entity);
+
+        return Task.CompletedTask;
+    }
 }
 
 //Query
@@ -28,8 +37,13 @@ public partial class UserQueryRepository
     public async Task<UserQuery> FindByIdAsync(object id, CancellationToken cancellationToken) 
         => await _context.Users.FirstOrDefaultAsync(user => user.Id.Equals(id), cancellationToken);
 
-    public async Task<UserQuery> FindByPasswordAsync(string password, CancellationToken cancellationToken)
-        => await _context.Users.FirstOrDefaultAsync(user => user.Password.Equals(password), cancellationToken);
+    public Task<UserQuery> FindByIdEagerLoadingAsync(object id, CancellationToken cancellationToken) 
+        => _context.Users.Include(User => User.RoleUsers)
+                         .ThenInclude(RoleUser => RoleUser.Role)
+                         .Include(User => User.PermissionUsers)
+                         .ThenInclude(PermissionUser => PermissionUser.Permission)
+                         .ThenInclude(Permission => Permission.Role)
+                         .FirstOrDefaultAsync(User => User.Id.Equals(id), cancellationToken);
 
     public async Task<UserQuery> FindByUsernameEagerLoadingAsync(string username, CancellationToken cancellationToken) 
         => await _context.Users.AsNoTracking()

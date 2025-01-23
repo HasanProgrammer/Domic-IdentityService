@@ -21,6 +21,20 @@ public partial class PermissionUserQueryRepository
     public void Remove(PermissionUserQuery entity) => _context.PermissionUsers.Remove(entity);
 
     public void RemoveRange(IEnumerable<PermissionUserQuery> entities) => _context.PermissionUsers.RemoveRange(entities);
+
+    public Task RemoveRangeAsync(IEnumerable<PermissionUserQuery> entities, CancellationToken cancellationToken)
+    {
+        _context.PermissionUsers.RemoveRange(entities);
+
+        return Task.CompletedTask;
+    }
+
+    public Task AddRangeAsync(IEnumerable<PermissionUserQuery> entities, CancellationToken cancellationToken)
+    {
+        _context.PermissionUsers.AddRange(entities);
+
+        return Task.CompletedTask;
+    }
 }
 
 //Query

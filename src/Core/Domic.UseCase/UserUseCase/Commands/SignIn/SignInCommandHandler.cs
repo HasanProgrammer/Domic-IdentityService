@@ -1,6 +1,7 @@
 ﻿using System.Security.Claims;
 using Domic.Core.Domain.Contracts.Interfaces;
 using Domic.Core.Domain.Extensions;
+using Domic.Core.UseCase.Attributes;
 using Domic.Core.UseCase.Contracts.Interfaces;
 using Domic.Core.UseCase.DTOs;
 using Domic.Core.UseCase.Exceptions;
@@ -34,6 +35,7 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
 
     public Task BeforeHandleAsync(SignInCommand command, CancellationToken cancellationToken) => Task.CompletedTask;
 
+    [WithTransaction]
     public async Task<string> HandleAsync(SignInCommand command, CancellationToken cancellationToken)
     {
         var targetUser =
@@ -68,7 +70,13 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
             Expires  = _configuration.GetValue<int>("JWT:Expire")
         };
 
-        return _jsonWebToken.Generate(tokenParameter, claims.ToArray());
+        var token = _jsonWebToken.Generate(tokenParameter, claims.ToArray());
+
+        targetUser.Token = token;
+
+        await _userQueryRepository.ChangeAsync(targetUser, cancellationToken);
+
+        return token;
     }
 
     public Task AfterHandleAsync(SignInCommand command, CancellationToken cancellationToken) => Task.CompletedTask;
