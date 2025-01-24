@@ -53,4 +53,10 @@ public partial class UserQueryRepository
                                .Include(user => user.PermissionUsers)
                                .ThenInclude(pu => pu.Permission)
                                .FirstOrDefaultAsync(cancellationToken);
+
+    public Task<UserQuery> FindByPhoneNumberEagerLoadingAsync(string phoneNumber, CancellationToken cancellationToken) 
+        => _context.Users.AsNoTracking()
+                         .Include(user => user.RoleUsers)
+                         .ThenInclude(roleUser => roleUser.Role)
+                         .FirstOrDefaultAsync(user => user.PhoneNumber == phoneNumber, cancellationToken);
 }
