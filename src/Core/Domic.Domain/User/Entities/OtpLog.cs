@@ -47,10 +47,54 @@ public class OtpLog : Entity<string>
         AddEvent(
             new OtpLogCreated {
                 Id          = Id,
+                UserId      = userId,
+                ExpiredAt   = ExpiredAt,
+                IsVerified  = false,
+                Code        = code, 
                 CreatedBy   = CreatedBy,
                 CreatedRole = CreatedRole,
                 CreatedAt_EnglishDate = nowDateTime,
                 CreatedAt_PersianDate = nowPersianDateTime
+            }
+        );
+    }
+    
+    /*---------------------------------------------------------------*/
+    
+    //Behaviors
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="dateTime"></param>
+    /// <param name="verificationStatus"></param>
+    /// <param name="updatedBy"></param>
+    /// <param name="updatedRoles"></param>
+    public void ChangeVerification(IDateTime dateTime, bool verificationStatus, 
+        string updatedBy, string updatedRoles
+    )
+    {
+        var nowDateTime        = DateTime.Now;
+        var nowPersianDateTime = dateTime.ToPersianShortDate(nowDateTime);
+
+        IsVerified = verificationStatus;
+        
+        //audit
+        UpdatedBy   = updatedBy;
+        UpdatedRole = updatedRoles;
+        UpdatedAt   = new UpdatedAt(nowDateTime, nowPersianDateTime);
+        
+        AddEvent(
+            new OtpLogUpdated {
+                Id          = Id,
+                UserId      = UserId,
+                ExpiredAt   = ExpiredAt,
+                IsVerified  = true,
+                Code        = Code, 
+                UpdatedBy   = UpdatedBy,
+                UpdatedRole = UpdatedRole,
+                UpdatedAt_EnglishDate = nowDateTime,
+                UpdatedAt_PersianDate = nowPersianDateTime
             }
         );
     }

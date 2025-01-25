@@ -2,7 +2,7 @@
 
 namespace Domic.UseCase.UserUseCase.Commands.OtpGeneration;
 
-public class OtpGenerationCommand : ICommand<string>
+public class OtpGenerationCommand : ICommand<bool>
 {
     public string PhoneNumber { get; set; }
 }

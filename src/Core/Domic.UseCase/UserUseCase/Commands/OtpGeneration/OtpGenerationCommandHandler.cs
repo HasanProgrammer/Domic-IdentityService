@@ -10,7 +10,7 @@ namespace Domic.UseCase.UserUseCase.Commands.OtpGeneration;
 
 public class OtpGenerationCommandHandler(IOtpLogCommandRepository otpLogCommandRepository,
     IGlobalUniqueIdGenerator globalUniqueIdGenerator, IDateTime dateTime, ISerializer serializer
-) : ICommandHandler<OtpGenerationCommand, string>
+) : ICommandHandler<OtpGenerationCommand, bool>
 {
     private readonly object _validationResult;
     
@@ -19,7 +19,7 @@ public class OtpGenerationCommandHandler(IOtpLogCommandRepository otpLogCommandR
 
     [WithValidation]
     [WithTransaction]
-    public async Task<string> HandleAsync(OtpGenerationCommand command, CancellationToken cancellationToken)
+    public async Task<bool> HandleAsync(OtpGenerationCommand command, CancellationToken cancellationToken)
     {
         var targetUser = _validationResult as UserQuery;
 
@@ -31,7 +31,7 @@ public class OtpGenerationCommandHandler(IOtpLogCommandRepository otpLogCommandR
 
         await otpLogCommandRepository.AddAsync(newOtpLog, cancellationToken);
 
-        return digitCode;
+        return true;
     }
 
     public Task AfterHandleAsync(OtpGenerationCommand command, CancellationToken cancellationToken)
