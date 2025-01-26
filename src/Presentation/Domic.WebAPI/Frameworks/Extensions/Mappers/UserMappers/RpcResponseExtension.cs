@@ -1,4 +1,4 @@
-using Domic.Core.Auth.Grpc;
+using Domic.Core.Identity.Grpc;
 using Domic.Core.Common.ClassExtensions;
 
 namespace Domic.WebAPI.Frameworks.Extensions.Mappers.UserMappers;
