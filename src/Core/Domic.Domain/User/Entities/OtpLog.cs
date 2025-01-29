@@ -10,7 +10,7 @@ public class OtpLog : Entity<string>
     //Fields
     
     public string UserId { get; private set; }
-    public string Code { get; private set; }
+    public string MessageContent { get; private set; }
     public bool IsVerified { get; private set; }
     public DateTime ExpiredAt { get; private set; }
     
@@ -28,16 +28,16 @@ public class OtpLog : Entity<string>
     private OtpLog() {}
 
     public OtpLog(IGlobalUniqueIdGenerator globalUniqueIdGenerator, IDateTime dateTime, ISerializer serializer,
-        string userId, string code, List<string> roles
+        string userId, string phoneNumber, string messageContent, List<string> roles
     )
     {
         var nowDateTime        = DateTime.Now;
         var nowPersianDateTime = dateTime.ToPersianShortDate(nowDateTime);
         
-        Id        = globalUniqueIdGenerator.GetRandom(6);
-        UserId    = userId;
-        Code      = code;
-        ExpiredAt = DateTime.UtcNow.AddMinutes(2);
+        Id             = globalUniqueIdGenerator.GetRandom(6);
+        UserId         = userId;
+        MessageContent = messageContent;
+        ExpiredAt      = DateTime.UtcNow.AddMinutes(2);
         
         //audit
         CreatedBy   = userId;
@@ -46,13 +46,14 @@ public class OtpLog : Entity<string>
         
         AddEvent(
             new OtpLogCreated {
-                Id          = Id,
-                UserId      = userId,
-                ExpiredAt   = ExpiredAt,
-                IsVerified  = false,
-                Code        = code, 
-                CreatedBy   = CreatedBy,
-                CreatedRole = CreatedRole,
+                Id             = Id,
+                UserId         = userId, 
+                PhoneNumber    = phoneNumber,
+                MessageContent = messageContent, 
+                ExpiredAt      = ExpiredAt,
+                IsVerified     = false,
+                CreatedBy      = CreatedBy,
+                CreatedRole    = CreatedRole,
                 CreatedAt_EnglishDate = nowDateTime,
                 CreatedAt_PersianDate = nowPersianDateTime
             }
@@ -67,10 +68,11 @@ public class OtpLog : Entity<string>
     /// 
     /// </summary>
     /// <param name="dateTime"></param>
+    /// <param name="phoneNumber"></param>
     /// <param name="verificationStatus"></param>
     /// <param name="updatedBy"></param>
     /// <param name="updatedRoles"></param>
-    public void ChangeVerification(IDateTime dateTime, bool verificationStatus, 
+    public void ChangeVerification(IDateTime dateTime, string phoneNumber, bool verificationStatus, 
         string updatedBy, string updatedRoles
     )
     {
@@ -86,13 +88,14 @@ public class OtpLog : Entity<string>
         
         AddEvent(
             new OtpLogUpdated {
-                Id          = Id,
-                UserId      = UserId,
-                ExpiredAt   = ExpiredAt,
-                IsVerified  = true,
-                Code        = Code, 
-                UpdatedBy   = UpdatedBy,
-                UpdatedRole = UpdatedRole,
+                Id             = Id,
+                UserId         = UserId,
+                PhoneNumber    = phoneNumber,
+                MessageContent = MessageContent, 
+                ExpiredAt      = ExpiredAt,
+                IsVerified     = true,
+                UpdatedBy      = UpdatedBy,
+                UpdatedRole    = UpdatedRole,
                 UpdatedAt_EnglishDate = nowDateTime,
                 UpdatedAt_PersianDate = nowPersianDateTime
             }

@@ -25,8 +25,8 @@ public class OtpGenerationCommandHandler(IOtpLogCommandRepository otpLogCommandR
 
         var digitCode = Random.Shared.Next(1000, 9999).ToString();
 
-        var newOtpLog = new OtpLog(globalUniqueIdGenerator, dateTime, serializer, targetUser.Id, digitCode,
-            targetUser.RoleUsers.Select(ru => ru.Role.Name).ToList()
+        var newOtpLog = new OtpLog(globalUniqueIdGenerator, dateTime, serializer, targetUser.Id,
+            digitCode, targetUser.PhoneNumber, targetUser.RoleUsers.Select(ru => ru.Role.Name).ToList()
         );
 
         await otpLogCommandRepository.AddAsync(newOtpLog, cancellationToken);

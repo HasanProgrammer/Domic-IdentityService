@@ -28,7 +28,7 @@ public class OtpVerificationCommandHandler(IOtpLogCommandRepository otpLogComman
     {
         var targetOtpLog = _validationResult as OtpLog;
         
-        targetOtpLog.ChangeVerification(dateTime, true, targetOtpLog.UserId, targetOtpLog.CreatedRole);
+        targetOtpLog.ChangeVerification(dateTime, command.PhoneNumber, true, targetOtpLog.UserId, targetOtpLog.CreatedRole);
 
         await otpLogCommandRepository.ChangeAsync(targetOtpLog, cancellationToken);
 

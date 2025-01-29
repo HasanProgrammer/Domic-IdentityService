@@ -17,7 +17,7 @@ public class OtpLogCommandRepository(SQLContext context) : IOtpLogCommandReposit
     ) => context.OtpLogs.AsNoTracking()
                         .Where(ol => ol.UserId == userId && ol.IsVerified == false && ol.ExpiredAt >= DateTime.UtcNow)
                         .OrderByDescending(ol => ol.ExpiredAt)
-                        .FirstOrDefaultAsync(ol => ol.Code == code, cancellationToken);
+                        .FirstOrDefaultAsync(ol => ol.MessageContent == code, cancellationToken);
 
     public Task AddAsync(OtpLog entity, CancellationToken cancellationToken)
     {

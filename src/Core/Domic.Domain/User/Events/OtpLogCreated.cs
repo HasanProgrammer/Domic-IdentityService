@@ -8,7 +8,8 @@ namespace Domic.Domain.User.Events;
 public class OtpLogCreated : CreateDomainEvent<string>
 {
     public string UserId { get; init; }
-    public string Code { get; init; }
+    public string PhoneNumber { get; init; }
+    public string MessageContent { get; init; }
     public bool IsVerified { get; init; }
     public DateTime ExpiredAt { get; init; }
 }
