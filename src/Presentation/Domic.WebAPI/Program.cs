@@ -26,6 +26,7 @@ builder.RegisterHelpers();
 builder.RegisterELK();
 builder.RegisterEntityFrameworkCoreQuery<Q_SQLContext>();
 builder.RegisterEntityFrameworkCoreCommand<C_SQLContext, string>();
+builder.RegisterCommandRepositories();
 builder.RegisterQueryRepositories();
 builder.RegisterCommandQueryUseCases();
 builder.RegisterGrpcServer();
