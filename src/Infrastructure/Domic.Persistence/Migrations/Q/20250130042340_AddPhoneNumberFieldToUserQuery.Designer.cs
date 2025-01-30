@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Domic.Persistence.Migrations.Q
 {
     [DbContext(typeof(SQLContext))]
-    [Migration("20250130041814_AddPhoneNumberFieldToUserQuery")]
+    [Migration("20250130042340_AddPhoneNumberFieldToUserQuery")]
     partial class AddPhoneNumberFieldToUserQuery
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
