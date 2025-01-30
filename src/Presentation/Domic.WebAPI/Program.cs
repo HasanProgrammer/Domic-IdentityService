@@ -33,6 +33,7 @@ builder.RegisterGrpcServer();
 builder.RegisterMessageBroker();
 builder.RegisterEventStreamBroker();
 builder.RegisterEventsSubscriber();
+builder.RegisterEventsPublisher();
 builder.RegisterDistributedCaching();
 builder.RegisterServices();
 

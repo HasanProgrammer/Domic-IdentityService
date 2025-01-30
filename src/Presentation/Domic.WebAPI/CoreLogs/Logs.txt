@@ -44,3 +44,19 @@ Error Number:207,State:1,Class:16
    at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
    at Domic.Core.WebAPI.Middlewares.FullExceptionHandlerInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) 
 
+
+ Date: 1403/11/11 | Message: Cannot create a DbSet for 'Event' because this type is not included in the model for the context. | Source: System.InvalidOperationException: Cannot create a DbSet for 'Event' because this type is not included in the model for the context.
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.AddRange(IEnumerable`1 entities)
+   at Domic.Core.Persistence.Interceptors.EfOutBoxPublishEventInterceptor`1.SavingChangesAsync(DbContextEventData eventData, InterceptionResult`1 result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.SaveChangesStartingAsync(IDiagnosticsLogger`1 diagnostics, DbContext context, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Domic.Infrastructure.Implementations.Domain.Repositories.C.CommandUnitOfWork.CommitAsync(CancellationToken cancellationToken) in D:\Programming\Domic\Domic-IdentityService\src\Infrastructure\Domic.Infrastructure\Implementations.Domain\Repositories\C\QueryUnitOfWork.cs:line 34
+   at Domic.Core.Infrastructure.Concretes.Mediator._InvokeHandleMethodAsync[TResult](Object commandHandler, MethodInfo commandHandlerMethod, MethodInfo commandAfterHandlerMethod, ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.Core.Infrastructure.Concretes.Mediator.DispatchAsync[TResult](ICommand`1 command, CancellationToken cancellationToken)
+   at Domic.WebAPI.EntryPoints.GRPCs.AuthRPC.OtpGeneration(OtpGenerationRequest request, ServerCallContext context) in D:\Programming\Domic\Domic-IdentityService\src\Presentation\Domic.WebAPI\EntryPoints\GRPCs\IdentityRPC.cs:line 55
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Domic.Core.WebAPI.Middlewares.FullExceptionHandlerInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) 
+
