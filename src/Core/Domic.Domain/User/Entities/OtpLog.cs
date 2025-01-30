@@ -10,7 +10,7 @@ public class OtpLog : Entity<string>
     //Fields
     
     public string UserId { get; private set; }
-    public string MessageContent { get; private set; }
+    public string Code { get; private set; }
     public bool IsVerified { get; private set; }
     public DateTime ExpiredAt { get; private set; }
     
@@ -27,17 +27,27 @@ public class OtpLog : Entity<string>
     //EF Core
     private OtpLog() {}
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="globalUniqueIdGenerator"></param>
+    /// <param name="dateTime"></param>
+    /// <param name="serializer"></param>
+    /// <param name="userId"></param>
+    /// <param name="phoneNumber"></param>
+    /// <param name="code"></param>
+    /// <param name="roles"></param>
     public OtpLog(IGlobalUniqueIdGenerator globalUniqueIdGenerator, IDateTime dateTime, ISerializer serializer,
-        string userId, string phoneNumber, string messageContent, List<string> roles
+        string userId, string phoneNumber, string code, List<string> roles
     )
     {
         var nowDateTime        = DateTime.Now;
         var nowPersianDateTime = dateTime.ToPersianShortDate(nowDateTime);
         
-        Id             = globalUniqueIdGenerator.GetRandom(6);
-        UserId         = userId;
-        MessageContent = messageContent;
-        ExpiredAt      = DateTime.UtcNow.AddMinutes(2);
+        Id        = globalUniqueIdGenerator.GetRandom(6);
+        UserId    = userId;
+        Code      = code;
+        ExpiredAt = DateTime.UtcNow.AddMinutes(2);
         
         //audit
         CreatedBy   = userId;
@@ -49,7 +59,7 @@ public class OtpLog : Entity<string>
                 Id             = Id,
                 UserId         = userId, 
                 PhoneNumber    = phoneNumber,
-                MessageContent = messageContent, 
+                MessageContent = code, 
                 ExpiredAt      = ExpiredAt,
                 IsVerified     = false,
                 CreatedBy      = CreatedBy,
@@ -91,7 +101,7 @@ public class OtpLog : Entity<string>
                 Id             = Id,
                 UserId         = UserId,
                 PhoneNumber    = phoneNumber,
-                MessageContent = MessageContent, 
+                MessageContent = Code, 
                 ExpiredAt      = ExpiredAt,
                 IsVerified     = true,
                 UpdatedBy      = UpdatedBy,
