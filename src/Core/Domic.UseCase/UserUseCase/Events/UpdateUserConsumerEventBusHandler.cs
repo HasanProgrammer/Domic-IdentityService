@@ -60,6 +60,7 @@ public class UpdateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserUp
         targetUser.LastName              = @event.LastName;
         targetUser.Username              = @event.Username;
         targetUser.Password              = @event.Password;
+        targetUser.PhoneNumber           = @event.PhoneNumber;
         targetUser.UpdatedBy             = @event.UpdatedBy;
         targetUser.UpdatedRole           = @event.UpdatedRole;
         targetUser.UpdatedAt_EnglishDate = @event.UpdatedAt_EnglishDate;

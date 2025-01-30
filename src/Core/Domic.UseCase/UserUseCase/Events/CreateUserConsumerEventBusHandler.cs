@@ -47,6 +47,7 @@ public class CreateUserConsumerEventBusHandler : IConsumerEventBusHandler<UserCr
             Username              = @event.Username                                       ,
             Password              = @event.Password.HashAsync(default).Result             ,
             IsActive              = @event.IsActive ? IsActive.Active : IsActive.InActive ,
+            PhoneNumber           = @event.PhoneNumber                                    , 
             CreatedAt_EnglishDate = @event.CreatedAt_EnglishDate                          ,
             CreatedAt_PersianDate = @event.CreatedAt_PersianDate
         };
