@@ -1,17 +1,17 @@
-name: 'auth_service'
+name: 'identity_service'
 
 services:
   
   domic.auth.api:
     networks:
       - domic
-    image: auth_service:1.0.0
-    deploy:
-      resources:
-        limits:
-          memory: 150M
-        reservations:
-          memory: 150M
+    image: identity_service:1.0.0
+    # deploy:
+    #   resources:
+    #     limits:
+    #       memory: 150M
+    #     reservations:
+    #       memory: 150M
     build:
       context: .
       dockerfile: Dockerfile
@@ -22,14 +22,14 @@ services:
       - log:/app/CoreLogs
       - ~\.aspnet\https\:/https/
     environment:
-      - Elastic-Host=http://localhost:9200
-      - Elastic-Index=http://localhost:9200
-      - Elastic-Username=
-      - Elastic-Password=
-      - E-RabbitMQ-Host=host.docker.internal
+      - Elastic-Host=http://domic.elastic.search:9200
+      - Elastic-Index=identity
+      - Elastic-Username=domic
+      - Elastic-Password=Domic123!@#
+      - E-RabbitMQ-Host=domic.rabbit.mq
       - E-RabbitMQ-Port=5672
-      - E-RabbitMQ-Username=guest
-      - E-RabbitMQ-Password=guest
+      - E-RabbitMQ-Username=domic
+      - E-RabbitMQ-Password=Domic123!@#
       - I-RabbitMQ-Host=
       - I-RabbitMQ-Port=
       - I-RabbitMQ-Username=
@@ -38,21 +38,21 @@ services:
       - I-RedisConnectionString=
       - MongoConnectionString=
       - C-SqlServerConnectionString=
-      - Q-SqlServerConnectionString=Server=domic.auth.sql.server,1433;Database=AuthService;User ID=sa;Password=Hasan313@@313!!;MultipleActiveResultSets=true;
-      - Host=domic.auth.api
+      - Q-SqlServerConnectionString=Server=domic.identity.sql.server,1433;Database=IdentityService;User ID=sa;Password=Hasan313@@313!!;MultipleActiveResultSets=true;
+      - Host=domic.identity.api
       - Port=443
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=https://+:443;http://+:80
-      - ASPNETCORE_Kestrel__Certificates__Default__Password=Dotris313@313%%
-      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/Karami.WebAPI.pfx
+      - ASPNETCORE_Kestrel__Certificates__Default__Password=Domic123!@#
+      - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/Domic.WebAPI.pfx
     depends_on:
-      - domic.auth.sql.server
+      - domic.identity.sql.server
   
-  domic.auth.sql.server:
+  domic.identity.sql.server:
     networks:
       - domic
     image: 'mcr.microsoft.com/mssql/server'
-    container_name: 'auth_sql_server'
+    container_name: 'identity_sql_server'
     ports:
       - 1439:1433
     environment:
