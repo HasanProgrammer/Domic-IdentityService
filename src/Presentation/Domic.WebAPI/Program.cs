@@ -36,6 +36,7 @@ builder.RegisterEventsSubscriber();
 builder.RegisterEventsPublisher();
 builder.RegisterDistributedCaching();
 builder.RegisterServices();
+builder.RegisterAssemblyTypesInMemory();
 
 builder.Services.AddMvc();
 builder.Services.AddHttpContextAccessor();
