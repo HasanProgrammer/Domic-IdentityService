@@ -1,5 +1,4 @@
 using Domic.Core.Infrastructure.Extensions;
-using Domic.Core.UseCase.Contracts.Interfaces;
 using Domic.Core.WebAPI.Extensions;
 using Domic.Infrastructure.Extensions.C;
 using Domic.Infrastructure.Extensions.Q;
