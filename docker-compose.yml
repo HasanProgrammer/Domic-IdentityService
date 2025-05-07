@@ -34,7 +34,7 @@ services:
       - I-RabbitMQ-Port=
       - I-RabbitMQ-Username=
       - I-RabbitMQ-Password=
-      - E-RedisConnectionString=
+      - E-RedisConnectionString=domic.redis:6379
       - I-RedisConnectionString=
       - MongoConnectionString=
       - C-SqlServerConnectionString=Server=domic.identity.command.sql.server,1433;Database=C-IdentityService;User ID=sa;Password=Hasan313@@313!!;MultipleActiveResultSets=true;
