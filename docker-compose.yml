@@ -37,8 +37,8 @@ services:
       - E-RedisConnectionString=
       - I-RedisConnectionString=
       - MongoConnectionString=
-      - C-SqlServerConnectionString=
-      - Q-SqlServerConnectionString=Server=domic.identity.sql.server,1433;Database=IdentityService;User ID=sa;Password=Hasan313@@313!!;MultipleActiveResultSets=true;
+      - C-SqlServerConnectionString=Server=domic.identity.command.sql.server,1433;Database=C-IdentityService;User ID=sa;Password=Hasan313@@313!!;MultipleActiveResultSets=true;
+      - Q-SqlServerConnectionString=Server=domic.identity.query.sql.server,1433;Database=Q-IdentityService;User ID=sa;Password=Hasan313@@313!!;MultipleActiveResultSets=true;
       - Host=domic.identity.api
       - Port=443
       - ASPNETCORE_ENVIRONMENT=Production
@@ -46,15 +46,27 @@ services:
       - ASPNETCORE_Kestrel__Certificates__Default__Password=Domic123!@#
       - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/Domic.WebAPI.pfx
     depends_on:
-      - domic.identity.sql.server
+      - domic.identity.command.sql.server
+      - domic.identity.query.sql.server
   
-  domic.identity.sql.server:
+  domic.identity.command.sql.server:
     networks:
       - domic
     image: 'mcr.microsoft.com/mssql/server'
-    container_name: 'identity_sql_server'
+    container_name: 'command_identity_sql_server'
     ports:
       - 1439:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Hasan313@@313!!
+
+  domic.identity.query.sql.server:
+    networks:
+      - domic
+    image: 'mcr.microsoft.com/mssql/server'
+    container_name: 'query_identity_sql_server'
+    ports:
+      - 1499:1433
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Hasan313@@313!!
