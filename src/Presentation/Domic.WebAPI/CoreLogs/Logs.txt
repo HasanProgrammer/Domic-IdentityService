@@ -1,0 +1,7 @@
+
+ Date: 1404/03/17 | Message: Object reference not set to an instance of an object. | Source: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Domic.WebAPI.EntryPoints.GRPCs.AuthRPC.OtpVerification(OtpVerificationRequest request, ServerCallContext context) in D:\Programming\Hasan Company\Programming ASP\DotrisCompany\IdentityService\src\Presentation\Domic.WebAPI\EntryPoints\GRPCs\IdentityRPC.cs:line 74
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.ResolvedInterceptorInvoker(TRequest resolvedRequest, ServerCallContext resolvedContext)
+   at Domic.Core.WebAPI.Middlewares.FullExceptionHandlerInterceptor.UnaryServerHandler[TRequest,TResponse](TRequest request, ServerCallContext context, UnaryServerMethod`2 continuation) 
+
