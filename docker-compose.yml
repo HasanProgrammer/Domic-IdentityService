@@ -54,6 +54,10 @@ services:
       - domic
     image: 'mcr.microsoft.com/mssql/server'
     container_name: 'command_identity_sql_server'
+    deploy:
+      resources:
+        limits:
+          memory: 2G
     ports:
       - 1439:1433
     environment:
@@ -65,6 +69,10 @@ services:
       - domic
     image: 'mcr.microsoft.com/mssql/server'
     container_name: 'query_identity_sql_server'
+    deploy:
+      resources:
+        limits:
+          memory: 2G
     ports:
       - 1499:1433
     environment:
