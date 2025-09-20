@@ -47,39 +47,39 @@ services:
       - ASPNETCORE_URLS=https://+:443;http://+:80
       - ASPNETCORE_Kestrel__Certificates__Default__Password=Domic123!@#
       - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/Domic.WebAPI.pfx
-    depends_on:
+#    depends_on:
 #      - domic.identity.command.sql.server
 #      - domic.identity.query.sql.server
   
-  domic.identity.command.sql.server:
-    networks:
-      - domic
-    image: 'mcr.microsoft.com/mssql/server'
-    container_name: 'command_identity_sql_server'
-    deploy:
-      resources:
-        limits:
-          memory: 2G
-    ports:
-      - 1439:1433
-    environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=Domic123!@#
-
-  domic.identity.query.sql.server:
-    networks:
-      - domic
-    image: 'mcr.microsoft.com/mssql/server'
-    container_name: 'query_identity_sql_server'
-    deploy:
-      resources:
-        limits:
-          memory: 2G
-    ports:
-      - 1499:1433
-    environment:
-      - ACCEPT_EULA=Y
-      - SA_PASSWORD=Domic123!@#
+#  domic.identity.command.sql.server:
+#    networks:
+#      - domic
+#    image: 'mcr.microsoft.com/mssql/server'
+#    container_name: 'command_identity_sql_server'
+#    deploy:
+#      resources:
+#        limits:
+#          memory: 2G
+#    ports:
+#      - 1439:1433
+#    environment:
+#      - ACCEPT_EULA=Y
+#      - SA_PASSWORD=Domic123!@#
+#
+#  domic.identity.query.sql.server:
+#    networks:
+#      - domic
+#    image: 'mcr.microsoft.com/mssql/server'
+#    container_name: 'query_identity_sql_server'
+#    deploy:
+#      resources:
+#        limits:
+#          memory: 2G
+#    ports:
+#      - 1499:1433
+#    environment:
+#      - ACCEPT_EULA=Y
+#      - SA_PASSWORD=Domic123!@#
 
 volumes:
   log:
