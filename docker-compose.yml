@@ -37,8 +37,10 @@ services:
       - E-RedisConnectionString=domic.redis:6379
       - I-RedisConnectionString=
       - MongoConnectionString=
-      - C-SqlServerConnectionString=Server=domic.identity.command.sql.server,1433;Database=C-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;
-      - Q-SqlServerConnectionString=Server=domic.identity.query.sql.server,1433;Database=Q-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;
+#     - C-SqlServerConnectionString=Server=domic.identity.command.sql.server,1433;Database=C-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;
+#     - Q-SqlServerConnectionString=Server=domic.identity.query.sql.server,1433;Database=Q-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;
+      - C-SqlServerConnectionString=Server=domic.sql.server,1433;Database=C-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;
+      - Q-SqlServerConnectionString=Server=domic.sql.server,1433;Database=Q-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;
       - Host=domic.identity.api
       - Port=443
       - ASPNETCORE_ENVIRONMENT=Production
@@ -46,8 +48,8 @@ services:
       - ASPNETCORE_Kestrel__Certificates__Default__Password=Domic123!@#
       - ASPNETCORE_Kestrel__Certificates__Default__Path=/https/Domic.WebAPI.pfx
     depends_on:
-      - domic.identity.command.sql.server
-      - domic.identity.query.sql.server
+#      - domic.identity.command.sql.server
+#      - domic.identity.query.sql.server
   
   domic.identity.command.sql.server:
     networks:
