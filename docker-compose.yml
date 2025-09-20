@@ -20,8 +20,7 @@ services:
       - "1040-1060:443"
     volumes:
       - log:/app/CoreLogs
-#      - ~/services/Domic-IdentityService/.https/:/https/
-      - ~\.aspnet\https\:/https/
+      - ~/services/Domic-IdentityService/.https/:/https/
     environment:
       - Elastic-Host=http://domic.elastic.search:9200
       - Elastic-Index=identity
@@ -56,7 +55,7 @@ services:
     image: 'mcr.microsoft.com/mssql/server'
     container_name: 'command_identity_sql_server'
     ports:
-      - 1239:1433
+      - 1439:1433
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Domic123!@#
@@ -67,7 +66,7 @@ services:
     image: 'mcr.microsoft.com/mssql/server'
     container_name: 'query_identity_sql_server'
     ports:
-      - 1299:1433
+      - 1499:1433
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Domic123!@#
