@@ -2,10 +2,11 @@ name: 'identity_service'
 
 services:
   
-  domic.identity.api:
+  domic.identity.service:
     networks:
       - domic
-    image: identity_service:1.0.0
+    image: domic_identity_service_image:1.0.0
+    container_name: "domic_identity_service"
     # deploy:
     #   resources:
     #     limits:
@@ -19,9 +20,8 @@ services:
     ports:
       - "1040-1060:443"
     volumes:
-      - log:/app/CoreLogs
+      - ~/services/Logs/Domic-IdentityService/:/app/CoreLogs/
       - ~/services/Domic-IdentityService/.https/:/https/
-#     - C:\https\:/https/
     environment:
       - Elastic-Host=http://domic.elastic.search:9200
       - Elastic-Index=identity
@@ -38,11 +38,11 @@ services:
       - E-RedisConnectionString=domic.redis:6379
       - I-RedisConnectionString=domic.redis:6379
       - MongoConnectionString=
-      - C-SqlServerConnectionString=Server=domic.sql.server,1433;Database=C-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;
-      - Q-SqlServerConnectionString=Server=domic.sql.server,1433;Database=Q-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;
+      - C-SqlServerConnectionString=Server=domic.sql.server,1433;Database=C-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;TrustServerCertificate=True;
+      - Q-SqlServerConnectionString=Server=domic.sql.server,1433;Database=Q-IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;TrustServerCertificate=True;
 #     - C-SqlServerConnectionString=Server=domic.identity.command.sql.server,1433;Database=IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;
 #     - Q-SqlServerConnectionString=Server=domic.identity.query.sql.server,1433;Database=IdentityService;User ID=sa;Password=Domic123!@#;MultipleActiveResultSets=true;Encrypt=False;
-      - Host=domic.identity.api
+      - Host=domic.identity.service
       - Port=443
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=https://+:443;http://+:80
@@ -57,7 +57,7 @@ services:
 #     networks:
 #       - domic
 #     image: 'mcr.microsoft.com/mssql/server'
-#     container_name: 'command_identity_sql_server'
+#     container_name: 'domic_command_identity_sql_server'
 #     deploy:
 #       resources:
 #         limits:
@@ -72,7 +72,7 @@ services:
 #     networks:
 #       - domic
 #     image: 'mcr.microsoft.com/mssql/server'
-#     container_name: 'query_identity_sql_server'
+#     container_name: 'domic_query_identity_sql_server'
 #     deploy:
 #       resources:
 #         limits:
@@ -82,9 +82,6 @@ services:
 #     environment:
 #       - ACCEPT_EULA=Y
 #       - SA_PASSWORD=Domic123!@#
-
-volumes:
-  log:
     
 networks:
   domic:
