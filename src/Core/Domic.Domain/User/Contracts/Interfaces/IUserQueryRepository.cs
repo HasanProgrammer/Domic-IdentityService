@@ -22,4 +22,12 @@ public interface IUserQueryRepository : IQueryRepository<UserQuery, string>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
     public Task<UserQuery> FindByPhoneNumberEagerLoadingAsync(string phoneNumber, CancellationToken cancellationToken);
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="phoneNumber"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    public Task<UserQuery> FindByEmailAsync(string email, CancellationToken cancellationToken);
 }

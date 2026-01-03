@@ -59,4 +59,8 @@ public partial class UserQueryRepository
                          .Include(user => user.RoleUsers)
                          .ThenInclude(roleUser => roleUser.Role)
                          .FirstOrDefaultAsync(user => user.PhoneNumber == phoneNumber, cancellationToken);
+
+    public Task<UserQuery> FindByEmailAsync(string email, CancellationToken cancellationToken) 
+        => _context.Users.AsNoTracking()
+                         .FirstOrDefaultAsync(user => user == phoneNumber, cancellationToken);
 }
