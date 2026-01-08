@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Domic.Persistence.Migrations.C
 {
     [DbContext(typeof(SQLContext))]
-    [Migration("20260108035951_AddEmailOtpLogEntity")]
-    partial class AddEmailOtpLogEntity
+    [Migration("20260108080718_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
