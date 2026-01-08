@@ -6,27 +6,29 @@ using Domic.Core.UseCase.Contracts.Interfaces;
 using Domic.Domain.User.Contracts.Interfaces;
 using Domic.Domain.User.Entities;
 
-namespace Domic.UseCase.UserUseCase.Commands.EmailGenerationCode;
+namespace Domic.UseCase.UserUseCase.Commands.EmailOtpGeneration;
 
-public class EmailGenerationCommandHandler(IOtpLogCommandRepository otpLogCommandRepository,
+public class EmailOtpGenerationCommandHandler(
+    IEmailOtpLogCommandRepository otpLogCommandRepository,
     IGlobalUniqueIdGenerator globalUniqueIdGenerator, IDateTime dateTime, ISerializer serializer
-) : ICommandHandler<EmailGenerationCodeCommand, bool>
+) : ICommandHandler<EmailOtpGenerationCommand, bool>
 {
     private readonly object _validationResult;
     
-    public Task BeforeHandleAsync(EmailGenerationCodeCommand command, CancellationToken cancellationToken)
+    public Task BeforeHandleAsync(EmailOtpGenerationCommand command, CancellationToken cancellationToken)
         => Task.CompletedTask;
 
     [WithValidation]
     [WithTransaction]
-    public async Task<bool> HandleAsync(EmailGenerationCodeCommand command, CancellationToken cancellationToken)
+    public async Task<bool> HandleAsync(EmailOtpGenerationCommand command, CancellationToken cancellationToken)
     {
         var targetUser = _validationResult as UserQuery;
 
         var digitCode = Random.Shared.Next(1000, 9999).ToString();
 
-        var newOtpLog = new OtpLog(globalUniqueIdGenerator, dateTime, serializer, targetUser.Id,
-            targetUser.PhoneNumber, digitCode, targetUser.RoleUsers.Select(ru => ru.Role.Name).ToList()
+        var newOtpLog = new EmailOtpLog(
+            globalUniqueIdGenerator, dateTime, serializer, targetUser.Id,
+            targetUser.Email, digitCode, targetUser.RoleUsers.Select(ru => ru.Role.Name).ToList()
         );
 
         await otpLogCommandRepository.AddAsync(newOtpLog, cancellationToken);
@@ -34,6 +36,6 @@ public class EmailGenerationCommandHandler(IOtpLogCommandRepository otpLogComman
         return true;
     }
 
-    public Task AfterHandleAsync(EmailGenerationCodeCommand command, CancellationToken cancellationToken)
+    public Task AfterHandleAsync(EmailOtpGenerationCommand command, CancellationToken cancellationToken)
         => Task.CompletedTask;
 }

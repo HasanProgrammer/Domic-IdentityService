@@ -81,4 +81,19 @@ public class AuthRPC : IdentityService.IdentityServiceBase
             Body    = new OtpVerificationResponseBody { Token = result }
         };
     }
+
+    public override Task<EmailOtpGenerationResponse> EmailOtpGeneration(EmailOtpGenerationRequest request, ServerCallContext context)
+    {
+        return base.EmailOtpGeneration(request, context);
+    }
+
+    public override Task<EmailOtpVerificationResponse> EmailOtpVerification(EmailOtpVerificationRequest request, ServerCallContext context)
+    {
+        return base.EmailOtpVerification(request, context);
+    }
+    
+    public override Task<ResetPasswordResponse> ResetPassword(ResetPasswordRequest request, ServerCallContext context)
+    {
+        return base.ResetPassword(request, context);
+    }
 }

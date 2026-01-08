@@ -1,4 +1,5 @@
-﻿using Domic.Core.UseCase.Contracts.Interfaces;
+﻿using Domic.Core.Domain.Enumerations;
+using Domic.Core.UseCase.Contracts.Interfaces;
 using Domic.Core.UseCase.Exceptions;
 using Domic.Domain.User.Contracts.Interfaces;
 
@@ -16,6 +17,9 @@ public class OtpGenerationCommandValidator(IUserQueryRepository userQueryReposit
             throw new UseCaseException(
                 string.Format("کاربری با شماره تماس {0} در سامانه موجود نمی باشد!", input.PhoneNumber)
             );
+        
+        if (targetUser.IsActive == IsActive.InActive)
+            throw new UseCaseException("حساب کاربری شما مسدود شده است!");
         
         if(await otpLogCommandRepository.IsExistOnNotVerifiedAndNotExpiredAsync(targetUser.Id, cancellationToken))
             throw new UseCaseException(

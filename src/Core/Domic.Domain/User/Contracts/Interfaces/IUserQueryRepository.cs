@@ -30,4 +30,12 @@ public interface IUserQueryRepository : IQueryRepository<UserQuery, string>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
     public Task<UserQuery> FindByEmailAsync(string email, CancellationToken cancellationToken);
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="email"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    public Task<UserQuery> FindByEmailEagerLoadingAsync(string email, CancellationToken cancellationToken);
 }

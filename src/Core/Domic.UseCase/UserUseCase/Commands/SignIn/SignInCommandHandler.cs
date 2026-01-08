@@ -36,19 +36,20 @@ public class SignInCommandHandler : ICommandHandler<SignInCommand, string>
 
     public Task BeforeHandleAsync(SignInCommand command, CancellationToken cancellationToken) => Task.CompletedTask;
 
+    [WithValidation]
     [WithTransaction(Type = TransactionType.Query)]
     public async Task<string> HandleAsync(SignInCommand command, CancellationToken cancellationToken)
     {
         var targetUser =
             await _userQueryRepository.FindByUsernameEagerLoadingAsync(command.Username, cancellationToken);
 
-        if (targetUser.IsActive == IsActive.InActive)
-            throw new UseCaseException("حساب کاربری شما مسدود شده است!");
-        
         var hashedPassword = await command.Password.HashAsync(cancellationToken);
         
         if (targetUser == null || !targetUser.Password.Equals(hashedPassword))
-            throw new UseCaseException("نام کاربری یا رمز عبور عبور صحیح نمی باشد !");
+            throw new UseCaseException("نام کاربری یا رمز عبور صحیح نمی باشد !");
+        
+        if (targetUser.IsActive == IsActive.InActive)
+            throw new UseCaseException("حساب کاربری شما مسدود شده است!");
         
         var roles       = targetUser.RoleUsers.Select(role => role.Role.Name);
         var permissions = targetUser.PermissionUsers.Select(permission => permission.Permission.Name);

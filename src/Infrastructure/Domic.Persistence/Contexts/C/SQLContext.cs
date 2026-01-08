@@ -20,6 +20,7 @@ public partial class SQLContext
 {
     public DbSet<Event> Events { get; set; }
     public DbSet<OtpLog> OtpLogs { get; set; }
+    public DbSet<EmailOtpLog> EmailOtpLogs { get; set; }
 }
 
 /*Config*/
@@ -31,5 +32,6 @@ public partial class SQLContext
 
         builder.ApplyConfiguration(new EventConfig());
         builder.ApplyConfiguration(new OtpLogConfig());
+        builder.ApplyConfiguration(new EmailOtpLogConfig());
     }
 }

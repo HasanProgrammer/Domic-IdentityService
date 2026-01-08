@@ -47,7 +47,11 @@ public partial class UserQueryRepository
 
     public async Task<UserQuery> FindByUsernameEagerLoadingAsync(string username, CancellationToken cancellationToken) 
         => await _context.Users.AsNoTracking()
-                               .Where(user => user.Username.Equals(username))
+                               .Where(user => 
+                                   user.Username.Equals(username) || 
+                                   user.Email.Equals(username)    ||
+                                   user.PhoneNumber.Equals(username)
+                               )
                                .Include(user => user.RoleUsers)
                                .ThenInclude(ru => ru.Role)
                                .Include(user => user.PermissionUsers)
@@ -62,5 +66,11 @@ public partial class UserQueryRepository
 
     public Task<UserQuery> FindByEmailAsync(string email, CancellationToken cancellationToken) 
         => _context.Users.AsNoTracking()
-                         .FirstOrDefaultAsync(user => user == phoneNumber, cancellationToken);
+                         .FirstOrDefaultAsync(user => user.Email == email, cancellationToken);
+
+    public Task<UserQuery> FindByEmailEagerLoadingAsync(string email, CancellationToken cancellationToken) 
+        => _context.Users.AsNoTracking()
+                         .Include(user => user.RoleUsers)
+                         .ThenInclude(roleUser => roleUser.Role)
+                         .FirstOrDefaultAsync(user => user.Email == email, cancellationToken);
 }

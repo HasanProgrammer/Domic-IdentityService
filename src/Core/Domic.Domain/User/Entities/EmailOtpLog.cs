@@ -5,7 +5,7 @@ using Domic.Domain.User.Events;
 
 namespace Domic.Domain.User.Entities;
 
-public class EmailVerificationCode : Entity<string>
+public class EmailOtpLog : Entity<string>
 {
     //Fields
     
@@ -25,7 +25,7 @@ public class EmailVerificationCode : Entity<string>
     /*---------------------------------------------------------------*/
 
     //EF Core
-    private EmailVerificationCode() {}
+    private EmailOtpLog() {}
 
     /// <summary>
     /// 
@@ -34,10 +34,10 @@ public class EmailVerificationCode : Entity<string>
     /// <param name="dateTime"></param>
     /// <param name="serializer"></param>
     /// <param name="userId"></param>
-    /// <param name="phoneNumber"></param>
+    /// <param name="emailAddress"></param>
     /// <param name="code"></param>
     /// <param name="roles"></param>
-    public EmailVerificationCode(IGlobalUniqueIdGenerator globalUniqueIdGenerator, IDateTime dateTime, 
+    public EmailOtpLog(IGlobalUniqueIdGenerator globalUniqueIdGenerator, IDateTime dateTime, 
         ISerializer serializer, string userId, string emailAddress, string code, List<string> roles
     )
     {
@@ -55,10 +55,10 @@ public class EmailVerificationCode : Entity<string>
         CreatedAt   = new CreatedAt(nowDateTime, nowPersianDateTime);
         
         AddEvent(
-            new OtpLogCreated {
+            new EmailOtpLogCreated {
                 Id             = Id,
                 UserId         = userId, 
-                PhoneNumber    = phoneNumber,
+                EmailAddress   = emailAddress,
                 MessageContent = code, 
                 ExpiredAt      = ExpiredAt,
                 IsVerified     = false,
@@ -78,11 +78,11 @@ public class EmailVerificationCode : Entity<string>
     /// 
     /// </summary>
     /// <param name="dateTime"></param>
-    /// <param name="phoneNumber"></param>
+    /// <param name="emailAddress"></param>
     /// <param name="verificationStatus"></param>
     /// <param name="updatedBy"></param>
     /// <param name="updatedRoles"></param>
-    public void ChangeVerification(IDateTime dateTime, string phoneNumber, bool verificationStatus, 
+    public void ChangeVerification(IDateTime dateTime, string emailAddress, bool verificationStatus, 
         string updatedBy, string updatedRoles
     )
     {
@@ -97,10 +97,10 @@ public class EmailVerificationCode : Entity<string>
         UpdatedAt   = new UpdatedAt(nowDateTime, nowPersianDateTime);
         
         AddEvent(
-            new OtpLogUpdated {
+            new EmailOtpLogUpdated {
                 Id             = Id,
                 UserId         = UserId,
-                PhoneNumber    = phoneNumber,
+                EmailAddress   = emailAddress,
                 MessageContent = Code, 
                 ExpiredAt      = ExpiredAt,
                 IsVerified     = true,
