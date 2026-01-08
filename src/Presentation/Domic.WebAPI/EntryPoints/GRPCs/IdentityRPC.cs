@@ -2,8 +2,10 @@
 using Grpc.Core;
 using Domic.Core.Identity.Grpc;
 using Domic.Core.UseCase.Contracts.Interfaces;
+using Domic.UseCase.UserUseCase.Commands.EmailOtpGeneration;
 using Domic.UseCase.UserUseCase.Commands.OtpGeneration;
 using Domic.UseCase.UserUseCase.Commands.OtpVerification;
+using Domic.UseCase.UserUseCase.Commands.ResetPassword;
 using Domic.UseCase.UserUseCase.Commands.SignIn;
 using Domic.WebAPI.Frameworks.Extensions.Mappers.UserMappers;
 
@@ -82,18 +84,47 @@ public class AuthRPC : IdentityService.IdentityServiceBase
         };
     }
 
-    public override Task<EmailOtpGenerationResponse> EmailOtpGeneration(EmailOtpGenerationRequest request, ServerCallContext context)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="request"></param>
+    /// <param name="context"></param>
+    /// <returns></returns>
+    public override async Task<EmailOtpGenerationResponse> EmailOtpGeneration(EmailOtpGenerationRequest request, 
+        ServerCallContext context
+    )
     {
-        return base.EmailOtpGeneration(request, context);
-    }
+        var command = new EmailOtpGenerationCommand { EmailAddress = request.EmailAddress.Value };
+        
+        var result = await _mediator.DispatchAsync(command, context.CancellationToken);
 
-    public override Task<EmailOtpVerificationResponse> EmailOtpVerification(EmailOtpVerificationRequest request, ServerCallContext context)
-    {
-        return base.EmailOtpVerification(request, context);
+        return new() {
+            Code    = _configuration.GetSuccessCreateStatusCode(),
+            Message = _configuration.GetSuccessCreateMessage(),
+            Body    = new EmailOtpGenerationResponseBody { Result = result }
+        };
     }
     
-    public override Task<ResetPasswordResponse> ResetPassword(ResetPasswordRequest request, ServerCallContext context)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="request"></param>
+    /// <param name="context"></param>
+    /// <returns></returns>
+    public override async Task<ResetPasswordResponse> ResetPassword(ResetPasswordRequest request, ServerCallContext context)
     {
-        return base.ResetPassword(request, context);
+        var command = new ResetPasswordCommand {
+            NewPassword  = request.NewPassword.Value  , 
+            EmailAddress = request.EmailAddress.Value ,
+            EmailCode    = request.EmailCode.Value 
+        };
+        
+        var result = await _mediator.DispatchAsync(command, context.CancellationToken);
+
+        return new() {
+            Code    = _configuration.GetSuccessCreateStatusCode(),
+            Message = _configuration.GetSuccessCreateMessage(),
+            Body    = new ResetPasswordResponseBody { Result = result }
+        };
     }
 }
